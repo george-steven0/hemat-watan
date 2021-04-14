@@ -38,6 +38,21 @@
                                         <a id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">فئات</a>
                                         <a id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">فئات فرعية</a>
                                         <a id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">منتجات</a>
+                                        <a id="list-prod-list" data-toggle="list" href="#list-product" role="tab" aria-controls="product">أضف منتج جديد</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <br/>
+
+                            <div class="elect_device_collapse">
+                                <a class="active" id="list-market-list" data-toggle="collapse" href="#market_list" role="button" aria-expanded="false" aria-controls="collapseExample">السوق</a><i class="fas fa-store-alt"></i>
+                                <div class="collapse" id="market_list">
+                                    <div class="list-group sub_list" id="list-tab" role="tablist">
+                                        <a id="list-market-list" data-toggle="list" href="#market_cate" role="tab" aria-controls="home">فئات</a>
+                                        <a id="list-market-cat-list" data-toggle="list" href="#market_sub_cate" role="tab" aria-controls="profile">فئات فرعية</a>
+                                        <a id="list-market-prod-list" data-toggle="list" href="#market_prod" role="tab" aria-controls="messages">منتجات</a>
+                                        <a id="list-market-new-prod-list" data-toggle="list" href="#market_new_prod" role="tab" aria-controls="product">أضف منتج جديد</a>
                                     </div>
                                 </div>
                             </div>
@@ -155,7 +170,7 @@
                                                                                 </div>
                                                                                 <div class="modal-footer">
                                                                                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                                                                  <button type="button" class="btn btn-success">Save changes</button>
                                                                                 </div>
                                                                               </div>
                                                                             </div>
@@ -200,7 +215,7 @@
                                                                                 </div>
                                                                                 <div class="modal-footer">
                                                                                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                                                                  <button type="button" class="btn btn-success">Save changes</button>
                                                                                 </div>
                                                                               </div>
                                                                             </div>
@@ -227,7 +242,7 @@
                             </div> <!-- الفئات -->
                             
 
-                            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                            <div class="tab-pane fade " id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
                                 <div class="container-fluid">
                                     <div class="row">
 
@@ -437,64 +452,8 @@
                                 <div class="container-fluid">
                                     <div class="row">
 
-                                        <div class="col-12">
+                                        <div class="col-12 new_product_container">
                                             <div class="add_cate_btn">
-                                                <!-- Button trigger modal -->
-                                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#prod_modal">
-                                                    إضف منتج جديد
-                                                </button>
-                                                
-                                                <!-- Modal -->
-                                                <div class="modal fade" id="prod_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <form>
-                                                                <input type="text" class="form-control" placeholder=" أدخل أسم المنتج " />
-                                                                <br/>
-                                                                <input type="text" class="form-control" placeholder=" أدخل وصف مختصر للمنتج " />
-                                                                <br/>
-                                                                <input type="text" class="form-control" placeholder=" أدخل وصف تفصيلي للمنتج " />
-                                                                <br/>
-                                                                <input type="number" class="form-control" placeholder=" أدخل سعر المنتج  " />
-                                                                <br/>
-                                                                <input type="number" class="form-control" placeholder="  أدخل سعر المنتج بعد الخصم  " />
-                                                                <br/>
-                                                               
-                                                                <input type="file" class="form-control" name="files[]" id="file" onchange="readURL(this)">
-                                                                <br />
-                                                                
-
-                                                                <div class="pic_preview">
-                                                                    <img src="#" id="blah" alt="Preview Image" />
-                                                                </div>
-                                                                <input type="text" class="form-control" placeholder=" أدخل بلد المنشأ " />
-                                                                <br/>
-                                                                <input type="number" class="form-control" placeholder="  أدخل الكمية  " />
-                                                                <br/>
-                                                                <input type="text" class="form-control" placeholder="  أدخل مدة الصلاحية  " />
-                                                                <br/>
-                                                                <input type="text" class="form-control" placeholder="  أدخل حجم المنتج  " />
-                                                                <br/>
-                                                                <input type="text" class="form-control" placeholder="  ملاحظات عم المنتج " />
-                                                                <br/>
-                                                            </form>
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-success">Save changes</button>
-                                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                                                        </div>
-                                                    </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Modal -->
-
                                                 <!-- category Table-->
                                                 <div class="prod_table cate_table_cont table-responsive">
                                                     <table class="table" id="TableSearch-prod">
@@ -564,58 +523,10 @@
 
                                                                 <td>
                                                                     <div>
-                                                                        <button type="button" style="color: #fff;" class="btn btn-warning" data-toggle="modal" data-target="#prod_editModal">
+                                                                        <a type="button" href="#" style="color: #fff;" class="btn btn-warning edit_prod_btn">
                                                                             تعديل
-                                                                          </button>
+                                                                        </a>
                                                                           
-                                                                          <!-- Modal -->
-                                                                          <div class="modal fade" id="prod_editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
-                                                                            <div class="modal-dialog">
-                                                                              <div class="modal-content">
-                                                                                <div class="modal-header">
-                                                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                                    <span aria-hidden="true">&times;</span>
-                                                                                  </button>
-                                                                                </div>
-                                                                                <div class="modal-body">
-                                                                                    <form>
-                                                                                        <input type="text" class="form-control" placeholder=" أدخل أسم المنتج " />
-                                                                                        <br/>
-                                                                                        <input type="text" class="form-control" placeholder=" أدخل وصف مختصر للمنتج " />
-                                                                                        <br/>
-                                                                                        <input type="text" class="form-control" placeholder=" أدخل وصف تفصيلي للمنتج " />
-                                                                                        <br/>
-                                                                                        <input type="number" class="form-control" placeholder=" أدخل سعر المنتج  " />
-                                                                                        <br/>
-                                                                                        <input type="number" class="form-control" placeholder="  أدخل سعر المنتج بعد الخصم  " />
-                                                                                        <br/>
-                                                                                       
-                                                                                        <input type="file" class="form-control" name="files[]" id="file" onchange="readURL(this)">
-                                                                                        <br />
-                                                                                        
-                        
-                                                                                        <div class="pic_preview">
-                                                                                            <img src="#" id="blah" alt="Preview Image" />
-                                                                                        </div>
-                                                                                        <input type="text" class="form-control" placeholder=" أدخل بلد المنشأ " />
-                                                                                        <br/>
-                                                                                        <input type="number" class="form-control" placeholder="  أدخل الكمية  " />
-                                                                                        <br/>
-                                                                                        <input type="text" class="form-control" placeholder="  أدخل مدة الصلاحية  " />
-                                                                                        <br/>
-                                                                                        <input type="text" class="form-control" placeholder="  أدخل حجم المنتج  " />
-                                                                                        <br/>
-                                                                                        <input type="text" class="form-control" placeholder="  ملاحظات عم المنتج " />
-                                                                                        <br/>
-                                                                                    </form>
-                                                                                </div>
-                                                                                <div class="modal-footer">
-                                                                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                                                  <button type="button" class="btn btn-primary">Save changes</button>
-                                                                                </div>
-                                                                              </div>
-                                                                            </div>
-                                                                          </div>
                                                                     </div>
                                                                 </td>
 
@@ -635,16 +546,785 @@
                                             </div>
                                         </div> <!-- col-12 -->
 
+                                        <div class="col-12 edit-prod-form">
+                                            <div class="form">
+                                                <div class="row">
+    
+                                                    <div class="col-sm-6 col-12">
+                                                        <label>إسم المنتج</label>
+                                                        <input type="text" class="form-control" required />
+                                                    </div>
+                                                    
+                                                    <div class="col-sm-6 col-12">
+                                                        <label>الكمية</label>
+                                                        <input type="number" class="form-control" required/>
+                                                    </div>
+    
+                                                    <div class="col-sm-6 col-12">
+                                                        <label>سعر المنتج</label>
+                                                        <input type="number" class="form-control" required/>
+                                                    </div>
+    
+                                                    <div class="col-sm-6 col-12">
+                                                        <label> سعر المنتج بعد الخصم</label>
+                                                        <input type="number" class="form-control" required/>
+                                                    </div>
+    
+                                                    <div class="col-12">
+                                                        <label>وصف مختصر للمنتج</label>
+                                                        <textarea class="form-control" required></textarea>
+                                                    </div>
+    
+                                                    <div class="col-sm-6 col-12">
+                                                        <label>أضف صورة اساسية</label>
+                                                        <input type="file" class="form-control" required />
+                                                    </div>
+    
+                                                    <div class="col-sm-6 col-12">
+                                                        <label>أضف صور فرعية</label>
+                                                        <input type="file" class="form-control" multiple />
+                                                    </div>
+    
+                                                    <div class="col-12">
+                                                        <label>وصف تفصيلى للمنتج</label>
+                                                        <textarea class="form-control" ></textarea>
+                                                    </div>
+    
+                                                    <div class="col-sm-6 col-12">
+                                                        <label>بلد المنشأ</label>
+                                                        <input type="text" class="form-control" required />
+                                                    </div>
+    
+                                                    <div class="col-sm-6 col-12">
+                                                        <label>فترة الصلاحية <span>بالشهور</span></label>
+                                                        <input type="number" class="form-control" required/>
+                                                    </div>
+    
+                                                    <div class="col-sm-6 col-12">
+                                                        <label>حجم العبوة</label>
+                                                        <input type="text" class="form-control" required />
+                                                    </div>
+    
+                                                    <div class="col-sm-6 col-12">
+                                                        <label>ملاحظات</label>
+                                                        <textarea class="form-control" ></textarea>
+                                                    </div>
+                                                    <br/>
+                                                    <div class="col-12 text-center">
+                                                        <button type="submit" style="color: #fff;" class="btn btn-warning edit_btn">تعديل منتج</button>
+                                                    </div>
+    
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div> <!-- المنتجات -->
 
-                        
-                          </div>
-                        </div>
-                    </div>
+                            <div class="tab-pane fade " id="list-product" role="tabpanel" aria-labelledby="list-prod-list">
+                                <div class="new-product">
+                                    <div class="container-fluid">
+                                        <div class="form">
+                                            <div class="row">
 
+                                                <div class="col-sm-6 col-12">
+                                                    <label>إسم المنتج</label>
+                                                    <input type="text" class="form-control" required />
+                                                </div>
+                                                
+                                                <div class="col-sm-6 col-12">
+                                                    <label>الكمية</label>
+                                                    <input type="number" class="form-control" required/>
+                                                </div>
+
+                                                <div class="col-sm-6 col-12">
+                                                    <label>سعر المنتج</label>
+                                                    <input type="number" class="form-control" required/>
+                                                </div>
+
+                                                <div class="col-sm-6 col-12">
+                                                    <label> سعر المنتج بعد الخصم</label>
+                                                    <input type="number" class="form-control" required/>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <label>وصف مختصر للمنتج</label>
+                                                    <textarea class="form-control" required></textarea>
+                                                </div>
+
+                                                <div class="col-sm-6 col-12">
+                                                    <label>أضف صورة اساسية</label>
+                                                    <input type="file" class="form-control" required />
+                                                </div>
+
+                                                <div class="col-sm-6 col-12">
+                                                    <label>أضف صور فرعية</label>
+                                                    <input type="file" class="form-control" multiple />
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <label>وصف تفصيلى للمنتج</label>
+                                                    <textarea class="form-control" ></textarea>
+                                                </div>
+
+                                                <div class="col-sm-6 col-12">
+                                                    <label>بلد المنشأ</label>
+                                                    <input type="text" class="form-control" required />
+                                                </div>
+
+                                                <div class="col-sm-6 col-12">
+                                                    <label>فترة الصلاحية <span>بالشهور</span></label>
+                                                    <input type="number" class="form-control" required/>
+                                                </div>
+
+                                                <div class="col-sm-6 col-12">
+                                                    <label>حجم العبوة</label>
+                                                    <input type="text" class="form-control" required />
+                                                </div>
+
+                                                <div class="col-sm-6 col-12">
+                                                    <label>ملاحظات</label>
+                                                    <textarea class="form-control" ></textarea>
+                                                </div>
+                                                <br/>
+                                                <div class="col-12 text-center">
+                                                    <button type="submit" class="btn btn-success add_new_btn">أضف منتج</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- اضف منتج جديد -->
+                            
+                            <!-- market part-->
+
+                            <div class="tab-pane fade " id="market_cate" role="tabpanel" aria-labelledby="list-market-list">
+                                <div class="container-fluid">
+                                    <div class="row">
+
+                                        <div class="col-12">
+                                            <div class="add_cate_btn">
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-success" data-toggle="modal" aria-labelledby="myModalLabel" data-target="#market_modal">
+                                                 إضف فئة جديدة
+                                                </button>
+                                                
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="market_modal" tabindex="-1" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form>
+                                                                <input type="text" class="form-control" placeholder="أدخل أسم الفئة" />
+                                                                <br/>
+                                                                <input type="file" class="form-control" name="files[]" id="file" onchange="readURL(this)">
+
+                                                                <div class="pic_preview">
+                                                                    <img src="#" id="blah" alt="Preview Image" />
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-success">Save changes</button>
+                                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Modal -->
+
+                                                <!-- category Table-->
+                                                <div class="cate_table_cont table-responsive">
+                                                    <table class="table" id="TableSearch">
+                                                        <thead>
+                                                            <th>#</th>
+                                                            <th>أسم الفئة</th>
+                                                            <th>صورة الفئة</th>
+                                                            <th></th>
+                                                            <th></th>
+                                                        </thead>
+
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>
+                                                                    <div>الاسم</div>
+                                                                </td>
+
+                                                                <td>
+                                                                    <div><img src="assests/img/baby.png" /></div>
+                                                                </td>
+
+                                                                <td>
+                                                                    <div>
+                                                                        <button type="button" style="color: #fff;" class="btn btn-warning" data-toggle="modal" data-target="#market_editModal">
+                                                                            تعديل
+                                                                          </button>
+                                                                          
+                                                                          <!-- Modal -->
+                                                                          <div class="modal fade" id="market_editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+                                                                            <div class="modal-dialog">
+                                                                              <div class="modal-content">
+                                                                                <div class="modal-header">
+                                                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                    <span aria-hidden="true">&times;</span>
+                                                                                  </button>
+                                                                                </div>
+                                                                                <div class="modal-body">
+                                                                                    <form>
+                                                                                        <input type="text" class="form-control" placeholder="أدخل أسم الفئة" />
+                                                                                        <br/>
+                                                                                        <input type="file" class="form-control" name="files[]" id="file" onchange="readURL2(this)">
+                        
+                                                                                        <div class="pic_preview2">
+                                                                                            <img src="#" id="blah2" alt="" />
+                                                                                        </div>
+                                                                                    </form>
+                                                                                </div>
+                                                                                <div class="modal-footer">
+                                                                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                                  <button type="button" class="btn btn-success">Save changes</button>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                    </div>
+                                                                </td>
+
+                                                                <td>
+                                                                    <div class="delete_btn">
+                                                                        <button class="btn btn-danger">Delete</button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td>
+                                                                    <div>اسم</div>
+                                                                </td>
+
+                                                                <td>
+                                                                    <div><img src="assests/img/breakfast.png" /></div>
+                                                                </td>
+
+                                                                <td>
+                                                                    <div>
+                                                                        <button type="button" style="color: #fff;" class="btn btn-warning" data-toggle="modal" data-target="#editModal">
+                                                                            تعديل
+                                                                          </button>
+                                                                          
+                                                                          <!-- Modal -->
+                                                                          <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+                                                                            <div class="modal-dialog">
+                                                                              <div class="modal-content">
+                                                                                <div class="modal-header">
+                                                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                    <span aria-hidden="true">&times;</span>
+                                                                                  </button>
+                                                                                </div>
+                                                                                <div class="modal-body">
+                                                                                  ...
+                                                                                </div>
+                                                                                <div class="modal-footer">
+                                                                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                    </div>
+                                                                </td>
+
+                                                                <td>
+                                                                    <div class="delete_btn">
+                                                                        <button class="btn btn-danger">Delete</button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- category Table-->
+
+                                            </div>
+                                        </div> <!-- col-12 -->
+
+                                    </div>
+                                </div>
+                            </div> <!-- الفئات -->
+
+                            <div class="tab-pane fade " id="market_sub_cate" role="tabpanel" aria-labelledby="list-market-cat-list">
+                                <div class="container-fluid">
+                                    <div class="row">
+
+                                        <div class="col-12">
+                                            <div class="add_cate_btn">
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#market_sub_cate_modal">
+                                                    إضف فئة فرعية جديدة
+                                                </button>
+                                                
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="market_sub_cate_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form>
+                                                                <input type="text" class="form-control" placeholder=" أدخل أسم الفئة الفرعية" />
+                                                                <br/>
+                                                                <div class="dropdown">
+                                                                    <a class="btn btn-info dropdown-toggle form-control" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                      اختر نوع الفئة
+                                                                    </a>
+                                                                  
+                                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                                      <a class="dropdown-item" href="#">Action</a>
+                                                                      <a class="dropdown-item" href="#">Another action</a>
+                                                                      <a class="dropdown-item" href="#">Something else here</a>
+                                                                    </div>
+                                                                  </div>
+                                                                  <br/>
+                                                                <input type="file" class="form-control" name="files[]" id="file" onchange="readURL(this)">
+                                                                <br />
+                                                                
+
+                                                                <div class="pic_preview">
+                                                                    <img src="#" id="blah" alt="Preview Image" />
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-success">Save changes</button>
+                                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Modal -->
+
+                                                <!-- category Table-->
+                                                <div class="cate_table_cont table-responsive">
+                                                    <table class="table" id="TableSearch">
+                                                        <thead>
+                                                            <th>#</th>
+                                                            <th>أسم الفئة</th>
+                                                            <th>صورة الفئة</th>
+                                                            <th>نوع الفئة</th>
+                                                            <th></th>
+                                                            <th></th>
+                                                        </thead>
+
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>
+                                                                    <div>الاسم</div>
+                                                                </td>
+
+                                                                <td>
+                                                                    <div><img src="assests/img/baby.png" /></div>
+                                                                </td>
+
+                                                                <td>
+                                                                    <div class="dropdown">
+                                                                        <a class="btn btn-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                          نوع الفئة
+                                                                        </a>
+                                                                      
+                                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                                          <a class="dropdown-item" href="#">Action</a>
+                                                                          <a class="dropdown-item" href="#">Another action</a>
+                                                                          <a class="dropdown-item" href="#">Something else here</a>
+                                                                        </div>
+                                                                      </div>
+                                                                </td>
+
+                                                                <td>
+                                                                    <div>
+                                                                        <button type="button" style="color: #fff;" class="btn btn-warning" data-toggle="modal" data-target="#market_sub_editModal">
+                                                                            تعديل
+                                                                          </button>
+                                                                          
+                                                                          <!-- Modal -->
+                                                                          <div class="modal fade" id="market_sub_editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+                                                                            <div class="modal-dialog">
+                                                                              <div class="modal-content">
+                                                                                <div class="modal-header">
+                                                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                    <span aria-hidden="true">&times;</span>
+                                                                                  </button>
+                                                                                </div>
+                                                                                <div class="modal-body">
+                                                                                    <form>
+                                                                                        <input type="text" class="form-control" placeholder="أدخل أسم الفئة" />
+                                                                                        <br/>
+                                                                                        <input type="file" class="form-control" name="files[]" id="file" onchange="readURL2(this)">
+                        
+                                                                                        <div class="pic_preview2">
+                                                                                            <img src="#" id="blah2" alt="" />
+                                                                                        </div>
+                                                                                    </form>
+                                                                                </div>
+                                                                                <div class="modal-footer">
+                                                                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                                  <button type="button" class="btn btn-success">Save changes</button>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                    </div>
+                                                                </td>
+
+                                                                <td>
+                                                                    <div class="delete_btn">
+                                                                        <button class="btn btn-danger">Delete</button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td>
+                                                                    <div>اسم</div>
+                                                                </td>
+
+                                                                <td>
+                                                                    <div><img src="assests/img/breakfast.png" /></div>
+                                                                </td>
+
+                                                                <td>
+                                                                    <div class="dropdown">
+                                                                        <a class="btn btn-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                          نوع الفئة
+                                                                        </a>
+                                                                      
+                                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                                          <a class="dropdown-item" href="#">Action</a>
+                                                                          <a class="dropdown-item" href="#">Another action</a>
+                                                                          <a class="dropdown-item" href="#">Something else here</a>
+                                                                        </div>
+                                                                      </div>
+                                                                </td>
+
+                                                                <td>
+                                                                    <div>
+                                                                        <button type="button" style="color: #fff;" class="btn btn-warning" data-toggle="modal" data-target="#sub_editModal">
+                                                                            تعديل
+                                                                          </button>
+                                                                          
+                                                                          <!-- Modal -->
+                                                                          <div class="modal fade" id="sub_editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+                                                                            <div class="modal-dialog">
+                                                                              <div class="modal-content">
+                                                                                <div class="modal-header">
+                                                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                    <span aria-hidden="true">&times;</span>
+                                                                                  </button>
+                                                                                </div>
+                                                                                <div class="modal-body">
+                                                                                  ...
+                                                                                </div>
+                                                                                <div class="modal-footer">
+                                                                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                    </div>
+                                                                </td>
+
+                                                                <td>
+                                                                    <div class="delete_btn">
+                                                                        <button class="btn btn-danger">Delete</button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- category Table-->
+
+                                            </div>
+                                        </div> <!-- col-12 -->
+
+                                    </div>
+                                </div>
+                            </div> <!-- الفئات الفرعية-->
+
+                            <div class="tab-pane fade " id="market_prod" role="tabpanel" aria-labelledby="list-market-prod-list">
+                                <div class="container-fluid">
+                                    <div class="row">
+
+                                        <div class="col-12 new_product_container">
+                                            <div class="add_cate_btn">
+                                                <!-- category Table-->
+                                                <div class="prod_table cate_table_cont table-responsive">
+                                                    <table class="table" id="TableSearch-prod">
+                                                        <thead>
+                                                            <th>#</th>
+                                                            <th>أسم المنتج</th>
+                                                            <th>وصف مختصر</th>
+                                                            <th>وصف المنتج تفصيلا</th>
+                                                            <th>السعر</th>
+                                                            <th>السعر بعد الخصم</th>
+                                                            <th> صورة اساسية <span class="req">*</span></th>
+                                                            <th>صور فرعية</th>
+                                                            <th>بلد المنشأ</th>
+                                                            <th>الكمية</th>
+                                                            <th>مدة الصلاحية</th>
+                                                            <th>الحجم</th>
+                                                            <th>ملاحظات</th>
+                                                            <th></th>
+                                                            <th></th>
+                                                        </thead>
+
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>
+                                                                    <div>الاسم</div>
+                                                                </td>
+                                                                <td>
+                                                                    <div>وصف مختصر للمنتج</div>
+                                                                </td>
+                                                                <td>
+                                                                    <div>وصف كامل للمنتج</div>
+                                                                </td>
+                                                                <td>
+                                                                    <div>سعر المنتج</div>
+                                                                </td>
+                                                                <td>
+                                                                    <div>
+                                                                        السعر بعد الخصم
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div><img src="assests/img/baby.png" /></div>
+                                                                </td>
+                                                                <td>
+                                                                    <div>صور إضافية أختياري</div>
+                                                                </td>
+
+                                                                <td>
+                                                                    <div>بلد المنشأ</div>
+                                                                </td>
+                                                                
+
+                                                                <td>
+                                                                    <div>الكمية</div>
+                                                                </td>
+
+                                                                <td>
+                                                                    تاريخ الصلاحية
+                                                                </td>
+                                                                <td>
+                                                                    <div>حجم العبوة</div>
+                                                                </td>
+                                                                <td>
+                                                                    <div>ملاحظات عن المنتج</div>
+                                                                </td>
+
+                                                                <td>
+                                                                    <div>
+                                                                        <a type="button" href="#" style="color: #fff;" class="btn btn-warning edit_prod_btn">
+                                                                            تعديل
+                                                                        </a>
+                                                                          
+                                                                    </div>
+                                                                </td>
+
+                                                                <td>
+                                                                    <div class="delete_btn">
+                                                                        <button class="btn btn-danger">Delete</button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- category Table-->
+
+                                            </div>
+                                        </div> <!-- col-12 -->
+
+                                        <div class="col-12 edit-prod-form">
+                                            <div class="form">
+                                                <div class="row">
+    
+                                                    <div class="col-sm-6 col-12">
+                                                        <label>إسم المنتج</label>
+                                                        <input type="text" class="form-control" required />
+                                                    </div>
+                                                    
+                                                    <div class="col-sm-6 col-12">
+                                                        <label>الكمية</label>
+                                                        <input type="number" class="form-control" required/>
+                                                    </div>
+    
+                                                    <div class="col-sm-6 col-12">
+                                                        <label>سعر المنتج</label>
+                                                        <input type="number" class="form-control" required/>
+                                                    </div>
+    
+                                                    <div class="col-sm-6 col-12">
+                                                        <label> سعر المنتج بعد الخصم</label>
+                                                        <input type="number" class="form-control" required/>
+                                                    </div>
+    
+                                                    <div class="col-12">
+                                                        <label>وصف مختصر للمنتج</label>
+                                                        <textarea class="form-control" required></textarea>
+                                                    </div>
+    
+                                                    <div class="col-sm-6 col-12">
+                                                        <label>أضف صورة اساسية</label>
+                                                        <input type="file" class="form-control" required />
+                                                    </div>
+    
+                                                    <div class="col-sm-6 col-12">
+                                                        <label>أضف صور فرعية</label>
+                                                        <input type="file" class="form-control" multiple />
+                                                    </div>
+    
+                                                    <div class="col-12">
+                                                        <label>وصف تفصيلى للمنتج</label>
+                                                        <textarea class="form-control" ></textarea>
+                                                    </div>
+    
+                                                    <div class="col-sm-6 col-12">
+                                                        <label>بلد المنشأ</label>
+                                                        <input type="text" class="form-control" required />
+                                                    </div>
+    
+                                                    <div class="col-sm-6 col-12">
+                                                        <label>فترة الصلاحية <span>بالشهور</span></label>
+                                                        <input type="number" class="form-control" required/>
+                                                    </div>
+    
+                                                    <div class="col-sm-6 col-12">
+                                                        <label>حجم العبوة</label>
+                                                        <input type="text" class="form-control" required />
+                                                    </div>
+    
+                                                    <div class="col-sm-6 col-12">
+                                                        <label>ملاحظات</label>
+                                                        <textarea class="form-control" ></textarea>
+                                                    </div>
+                                                    <br/>
+                                                    <div class="col-12 text-center">
+                                                        <button type="submit" style="color: #fff;" class="btn btn-warning edit_btn">تعديل منتج</button>
+                                                    </div>
+    
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div> <!-- المنتجات -->
+
+                            <div class="tab-pane fade " id="market_new_prod" role="tabpanel" aria-labelledby="list-market-new-prod-list">
+                                <div class="new-product">
+                                    <div class="container-fluid">
+                                        <div class="form">
+                                            <div class="row">
+
+                                                <div class="col-sm-6 col-12">
+                                                    <label>إسم المنتج</label>
+                                                    <input type="text" class="form-control" required />
+                                                </div>
+                                                
+                                                <div class="col-sm-6 col-12">
+                                                    <label>الكمية</label>
+                                                    <input type="number" class="form-control" required/>
+                                                </div>
+
+                                                <div class="col-sm-6 col-12">
+                                                    <label>سعر المنتج</label>
+                                                    <input type="number" class="form-control" required/>
+                                                </div>
+
+                                                <div class="col-sm-6 col-12">
+                                                    <label> سعر المنتج بعد الخصم</label>
+                                                    <input type="number" class="form-control" required/>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <label>وصف مختصر للمنتج</label>
+                                                    <textarea class="form-control" required></textarea>
+                                                </div>
+
+                                                <div class="col-sm-6 col-12">
+                                                    <label>أضف صورة اساسية</label>
+                                                    <input type="file" class="form-control" required />
+                                                </div>
+
+                                                <div class="col-sm-6 col-12">
+                                                    <label>أضف صور فرعية</label>
+                                                    <input type="file" class="form-control" multiple />
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <label>وصف تفصيلى للمنتج</label>
+                                                    <textarea class="form-control" ></textarea>
+                                                </div>
+
+                                                <div class="col-sm-6 col-12">
+                                                    <label>بلد المنشأ</label>
+                                                    <input type="text" class="form-control" required />
+                                                </div>
+
+                                                <div class="col-sm-6 col-12">
+                                                    <label>فترة الصلاحية <span>بالشهور</span></label>
+                                                    <input type="number" class="form-control" required/>
+                                                </div>
+
+                                                <div class="col-sm-6 col-12">
+                                                    <label>حجم العبوة</label>
+                                                    <input type="text" class="form-control" required />
+                                                </div>
+
+                                                <div class="col-sm-6 col-12">
+                                                    <label>ملاحظات</label>
+                                                    <textarea class="form-control" ></textarea>
+                                                </div>
+                                                <br/>
+                                                <div class="col-12 text-center">
+                                                    <button type="submit" class="btn btn-success add_new_btn">أضف منتج</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- اضف منتج جديد -->
+                            
+
+                            <!-- market part-->
+
+
+                        </div> <!-- main tab content -->
+
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
