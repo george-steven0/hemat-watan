@@ -57,6 +57,18 @@
                                 </div>
                             </div>
 
+                            <br />
+
+                            <div class="elect_device_collapse">
+                                <a class="active" id="list-market-list" data-toggle="collapse" href="#offer_list" role="button" aria-expanded="false" aria-controls="collapseExample">عروض وخصومات</a><i class="fas fa-tags"></i>
+                                <div class="collapse" id="offer_list">
+                                    <div class="list-group sub_list" id="list-tab" role="tablist">
+                                        <a id="list-market-list" data-toggle="list" href="#offer_tab" role="tab" aria-controls="home">كل العروض </a>
+                                        <a id="list-market-list" data-toggle="list" href="#add_offer_tab" role="tab" aria-controls="home">اضف عرض</a>
+                                    </div>
+                                </div>
+                            </div>
+
 
 
                             
@@ -79,7 +91,7 @@
                         <div class="tab-content"  id="nav-tabContent">
                             <!-- جزء الاجهزة الكهربائية -->
                             
-                            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                            <div class="tab-pane fade" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
                                 <div class="container-fluid">
                                     <div class="row">
 
@@ -1315,11 +1327,167 @@
                                     </div>
                                 </div>
                             </div> <!-- اضف منتج جديد -->
-                            
-
+                        
                             <!-- market part-->
 
+                            <!-- offer tabs -->
+                            <div class="tab-pane fade " id="offer_tab" role="tabpanel" aria-labelledby="list-market-new-prod-list">
+                                <div class="new-offer">
+                                    <div class="container-fluid">
+                                        <div class="form">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="table-responsive cate_table_cont">
+                                                        <table class="table ">
+                                                            <thead>
+                                                                <th>اسم الصنف</th>
+                                                                <th>صورة الصنف</th>
+                                                                <th>السعر قبل الخصم</th>
+                                                                <th>نسبة الخصم</th>
+                                                                <th>السعر بعد الخصم</th>
+                                                                <th></th>
+                                                            </thead>
 
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div>الاسم</div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div><img src="assests/img/baby.png" /></div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div>150 $</div>
+                                                                    </td>
+                                                                    <td>10%</td>
+                                                                    <td>135 $</td>
+                                                                    <td>
+                                                                        <div>
+                                                                            <!-- Button trigger modal -->
+                                                                            <button type="button" class="btn btn-warning" style="color:#fff" data-toggle="modal" data-target="#offer_modal">
+                                                                                تعديل العرض
+                                                                            </button>
+                                                                            
+                                                                            <!-- Modal -->
+                                                                            <div class="modal fade" id="offer_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                                <div class="modal-dialog">
+                                                                                <div class="modal-content">
+                                                                                    <div class="modal-header">
+                                                                                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                        <span aria-hidden="true">&times;</span>
+                                                                                    </button>
+                                                                                    </div>
+                                                                                    <div class="modal-body">
+                                                                                        <form>
+                                                                                            <div class="row">
+                                                                                                <div class="offer-inputs col-sm-6 col-12"><input type="text" class="form-control" placeholder="اسم الصنف" disabled /></div>
+                                                                                                <div class="offer-inputs col-sm-6 col-12"><input type="number" class="form-control" placeholder="السعر الحالى" disabled /></div>
+                                                                                                <div class="offer-inputs col-sm-6 col-12"><input type="number" class="form-control" min="0" placeholder="نسبة الخصم %" ظ /> </div><br/>
+                                                                                                <div class="offer-inputs col-sm-6 col-12"><input type="number" class="form-control" placeholder="السعر بعد الخصم" disabled /></div>
+
+                                                                                            </div>
+
+                                                                                        </form>
+                                                                                    </div>
+                                                                                    <div class="modal-footer">
+                                                                                        <button type="button" class="btn btn-success">Save changes</button>
+                                                                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- Modal -->
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- كل العروض -->
+
+                            <div class="tab-pane fade show active" id="add_offer_tab" role="tabpanel" aria-labelledby="list-market-new-prod-list">
+                                <div class="new-offer">
+                                    <div class="container-fluid">
+                                        <div class="form">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="table-responsive cate_table_cont">
+                                                        <table class="table ">
+                                                            <thead>
+                                                                <th>اسم الصنف</th>
+                                                                <th>صورة الصنف</th>
+                                                                <th>السعر</th>
+                                                                <th></th>
+                                                            </thead>
+
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div>الاسم</div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div><img src="assests/img/baby.png" /></div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div>150 $</div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div>
+                                                                            <!-- Button trigger modal -->
+                                                                            <button type="button" class="btn btn-warning" style="color:#fff" data-toggle="modal" data-target="#add_offer_modal">
+                                                                                اضف العرض
+                                                                            </button>
+                                                                            
+                                                                            <!-- Modal -->
+                                                                            <div class="modal fade" id="add_offer_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                                <div class="modal-dialog">
+                                                                                <div class="modal-content">
+                                                                                    <div class="modal-header">
+                                                                                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                        <span aria-hidden="true">&times;</span>
+                                                                                    </button>
+                                                                                    </div>
+                                                                                    <div class="modal-body">
+                                                                                        <form>
+                                                                                            <div class="row">
+                                                                                                <div class="offer-inputs col-sm-6 col-12"><input type="text" class="form-control" placeholder="اسم الصنف" disabled /></div>
+                                                                                                <div class="offer-inputs col-sm-6 col-12"><input type="number" class="form-control" placeholder="السعر الحالى" disabled /></div>
+                                                                                                <div class="offer-inputs col-sm-6 col-12"><input type="number" class="form-control" min="0" placeholder="نسبة الخصم %" ظ /> </div><br/>
+                                                                                                <div class="offer-inputs col-sm-6 col-12"><input type="number" class="form-control" placeholder="السعر بعد الخصم" disabled /></div>
+
+                                                                                            </div>
+
+                                                                                        </form>
+                                                                                    </div>
+                                                                                    <div class="modal-footer">
+                                                                                        <button type="button" class="btn btn-success">Save changes</button>
+                                                                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- Modal -->
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- اضف عرض جديد -->
+
+                            <!-- offer tabs -->
                         </div> <!-- main tab content -->
 
                     </div>

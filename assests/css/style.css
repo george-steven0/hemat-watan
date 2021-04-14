@@ -1316,9 +1316,16 @@ table.dataTable thead .sorting_desc:after{
 .dashboard .dash-holder .edit-prod-form{
     display: none;
 }
+.dashboard .dash-holder .offer-inputs{
+    margin-bottom: 15px;
+}
 /* dashboard page */
 
 
+
+table tr td,table th{
+    text-align: center;
+}
 
 
 
