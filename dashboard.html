@@ -91,7 +91,7 @@
                         <div class="tab-content"  id="nav-tabContent">
                             <!-- جزء الاجهزة الكهربائية -->
                             
-                            <div class="tab-pane fade" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
                                 <div class="container-fluid">
                                     <div class="row">
 
@@ -279,17 +279,12 @@
                                                             <form>
                                                                 <input type="text" class="form-control" placeholder=" أدخل أسم الفئة الفرعية" />
                                                                 <br/>
-                                                                <div class="dropdown">
-                                                                    <a class="btn btn-info dropdown-toggle form-control" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                      اختر نوع الفئة
-                                                                    </a>
-                                                                  
-                                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                                      <a class="dropdown-item" href="#">Action</a>
-                                                                      <a class="dropdown-item" href="#">Another action</a>
-                                                                      <a class="dropdown-item" href="#">Something else here</a>
-                                                                    </div>
-                                                                  </div>
+                                                                    <select class="form-control">
+                                                                        <option selected disabled>Select Sub Category...</option>
+                                                                        <option>1</option>
+                                                                        <option>2</option>
+                                                                        <option>3</option>
+                                                                    </select>
                                                                   <br/>
                                                                 <input type="file" class="form-control" name="files[]" id="file" onchange="readURL(this)">
                                                                 <br />
@@ -334,16 +329,13 @@
 
                                                                 <td>
                                                                     <div class="dropdown">
-                                                                        <a class="btn btn-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                          نوع الفئة
-                                                                        </a>
-                                                                      
-                                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                                          <a class="dropdown-item" href="#">Action</a>
-                                                                          <a class="dropdown-item" href="#">Another action</a>
-                                                                          <a class="dropdown-item" href="#">Something else here</a>
-                                                                        </div>
-                                                                      </div>
+                                                                        <select class="form-control">
+                                                                            <option selected disabled>Select Sub Category...</option>
+                                                                            <option>1</option>
+                                                                            <option>2</option>
+                                                                            <option>3</option>
+                                                                        </select>
+                                                                    </div>
                                                                 </td>
 
                                                                 <td>
@@ -401,16 +393,13 @@
 
                                                                 <td>
                                                                     <div class="dropdown">
-                                                                        <a class="btn btn-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                          نوع الفئة
-                                                                        </a>
-                                                                      
-                                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                                          <a class="dropdown-item" href="#">Action</a>
-                                                                          <a class="dropdown-item" href="#">Another action</a>
-                                                                          <a class="dropdown-item" href="#">Something else here</a>
-                                                                        </div>
-                                                                      </div>
+                                                                        <select class="form-control">
+                                                                            <option selected disabled>Select Sub Category...</option>
+                                                                            <option>1</option>
+                                                                            <option>2</option>
+                                                                            <option>3</option>
+                                                                        </select>
+                                                                    </div>
                                                                 </td>
 
                                                                 <td>
@@ -596,6 +585,28 @@
                                                         <label>أضف صور فرعية</label>
                                                         <input type="file" class="form-control" multiple />
                                                     </div>
+
+                                                    <div class="col-sm-6 col-12">
+                                                        <label>أختر الفئة</label>
+                                                        <select class="form-control">
+                                                            <option selected disabled>Select Category...</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                        </select>
+                                                    </div>
+    
+                                                    <div class="col-sm-6 col-12">
+                                                        <label>أختر الفئة الفرعية</label>
+                                                        <select class="form-control">
+                                                            <option selected disabled>Select Sub Category...</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <br/>
     
                                                     <div class="col-12">
                                                         <label>وصف تفصيلى للمنتج</label>
@@ -675,6 +686,27 @@
                                                     <input type="file" class="form-control" multiple />
                                                 </div>
 
+                                                <div class="col-sm-6 col-12">
+                                                    <label>أختر الفئة</label>
+                                                    <select class="form-control">
+                                                        <option selected disabled>Select Category...</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                    </select>
+                                                </div>
+    
+                                                <div class="col-sm-6 col-12">
+                                                    <label>أختر الفئة الفرعية</label>
+                                                    <select class="form-control">
+                                                        <option selected disabled>Select Sub Category...</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                    </select>
+                                                </div>
+                                                
+
                                                 <div class="col-12">
                                                     <label>وصف تفصيلى للمنتج</label>
                                                     <textarea class="form-control" ></textarea>
@@ -700,6 +732,10 @@
                                                     <textarea class="form-control" ></textarea>
                                                 </div>
                                                 <br/>
+                                                
+                                                    <div class="col-6"><input type="radio" name="availability" class="custom-radio" /> متاح</div>
+                                                    <div class="col-6"><input type="radio" name="availability" class="custom-radio" /> غير متاح</div>
+
                                                 <div class="col-12 text-center">
                                                     <button type="submit" class="btn btn-success add_new_btn">أضف منتج</button>
                                                 </div>
@@ -899,15 +935,12 @@
                                                                 <input type="text" class="form-control" placeholder=" أدخل أسم الفئة الفرعية" />
                                                                 <br/>
                                                                 <div class="dropdown">
-                                                                    <a class="btn btn-info dropdown-toggle form-control" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                      اختر نوع الفئة
-                                                                    </a>
-                                                                  
-                                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                                      <a class="dropdown-item" href="#">Action</a>
-                                                                      <a class="dropdown-item" href="#">Another action</a>
-                                                                      <a class="dropdown-item" href="#">Something else here</a>
-                                                                    </div>
+                                                                    <select class="form-control">
+                                                                        <option selected disabled>Select Sub Category...</option>
+                                                                        <option>1</option>
+                                                                        <option>2</option>
+                                                                        <option>3</option>
+                                                                    </select>
                                                                   </div>
                                                                   <br/>
                                                                 <input type="file" class="form-control" name="files[]" id="file" onchange="readURL(this)">
@@ -953,15 +986,12 @@
 
                                                                 <td>
                                                                     <div class="dropdown">
-                                                                        <a class="btn btn-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                          نوع الفئة
-                                                                        </a>
-                                                                      
-                                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                                          <a class="dropdown-item" href="#">Action</a>
-                                                                          <a class="dropdown-item" href="#">Another action</a>
-                                                                          <a class="dropdown-item" href="#">Something else here</a>
-                                                                        </div>
+                                                                        <select class="form-control">
+                                                                            <option selected disabled>Select Sub Category...</option>
+                                                                            <option>1</option>
+                                                                            <option>2</option>
+                                                                            <option>3</option>
+                                                                        </select>
                                                                       </div>
                                                                 </td>
 
@@ -1020,15 +1050,12 @@
 
                                                                 <td>
                                                                     <div class="dropdown">
-                                                                        <a class="btn btn-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                          نوع الفئة
-                                                                        </a>
-                                                                      
-                                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                                          <a class="dropdown-item" href="#">Action</a>
-                                                                          <a class="dropdown-item" href="#">Another action</a>
-                                                                          <a class="dropdown-item" href="#">Something else here</a>
-                                                                        </div>
+                                                                        <select class="form-control">
+                                                                            <option selected disabled>Select Sub Category...</option>
+                                                                            <option>1</option>
+                                                                            <option>2</option>
+                                                                            <option>3</option>
+                                                                        </select>
                                                                       </div>
                                                                 </td>
 
@@ -1214,6 +1241,26 @@
                                                         <label>أضف صور فرعية</label>
                                                         <input type="file" class="form-control" multiple />
                                                     </div>
+
+                                                    <div class="col-sm-6 col-12">
+                                                        <label>أختر الفئة</label>
+                                                        <select class="form-control">
+                                                            <option selected disabled>Select Category...</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                        </select>
+                                                    </div>
+        
+                                                    <div class="col-sm-6 col-12">
+                                                        <label>أختر الفئة الفرعية</label>
+                                                        <select class="form-control">
+                                                            <option selected disabled>Select Sub Category...</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                        </select>
+                                                    </div>
     
                                                     <div class="col-12">
                                                         <label>وصف تفصيلى للمنتج</label>
@@ -1293,6 +1340,26 @@
                                                     <input type="file" class="form-control" multiple />
                                                 </div>
 
+                                                <div class="col-sm-6 col-12">
+                                                    <label>أختر الفئة</label>
+                                                    <select class="form-control">
+                                                        <option selected disabled>Select Category...</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                    </select>
+                                                </div>
+    
+                                                <div class="col-sm-6 col-12">
+                                                    <label>أختر الفئة الفرعية</label>
+                                                    <select class="form-control">
+                                                        <option selected disabled>Select Sub Category...</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                    </select>
+                                                </div>
+
                                                 <div class="col-12">
                                                     <label>وصف تفصيلى للمنتج</label>
                                                     <textarea class="form-control" ></textarea>
@@ -1318,6 +1385,8 @@
                                                     <textarea class="form-control" ></textarea>
                                                 </div>
                                                 <br/>
+                                                <div class="col-6"><input type="radio" name="availability" class="custom-radio" /> متاح</div>
+                                                <div class="col-6"><input type="radio" name="availability" class="custom-radio" /> غير متاح</div>
                                                 <div class="col-12 text-center">
                                                     <button type="submit" class="btn btn-success add_new_btn">أضف منتج</button>
                                                 </div>
@@ -1411,7 +1480,7 @@
                                 </div>
                             </div> <!-- كل العروض -->
 
-                            <div class="tab-pane fade show active" id="add_offer_tab" role="tabpanel" aria-labelledby="list-market-new-prod-list">
+                            <div class="tab-pane fade " id="add_offer_tab" role="tabpanel" aria-labelledby="list-market-new-prod-list">
                                 <div class="new-offer">
                                     <div class="container-fluid">
                                         <div class="form">
