@@ -1319,6 +1319,20 @@ table.dataTable thead .sorting_desc:after{
 .dashboard .dash-holder .offer-inputs{
     margin-bottom: 15px;
 }
+.dashboard .main-dashboard-home{
+    width: 100%;
+    text-align: center;
+}
+.dashboard .main-dashboard-home img{
+    width: 500px;
+}
+.dashboard .main-dashboard-home .title{
+    font-size: 3vw;
+    font-weight: 800;
+    color: #0D786C;
+    letter-spacing: 2px;
+    padding-right: 10%;
+}
 /* dashboard page */
 
 
@@ -1542,6 +1556,9 @@ table tr td,table th{
     .dashboard .dash-holder .new-product .add_new_btn,.dashboard .dash-holder .edit-prod-form .edit_btn{
         padding: 8px 30px;
     }
+    .dashboard .main-dashboard-home img{
+        width: 100px;
+    }
     
 }
 @media (min-width:430px) and (max-width:530px){
@@ -1662,7 +1679,9 @@ table tr td,table th{
         font-size: 15px;
         font-weight: 500;
     }
-    
+    .dashboard .main-dashboard-home img{
+        width: 150px;
+    }
 }
 @media (min-width:530px) and (max-width:575.6px){
     .preview .prev_btn .select-wrapper{
@@ -1822,6 +1841,9 @@ table tr td,table th{
     .course_details .course_content .rating .rating_cont{
         width: 100%;
     }
+    .dashboard .main-dashboard-home img{
+        width: 200px;
+    }
     
     
 }
@@ -1959,6 +1981,9 @@ table tr td,table th{
         font-size: 15px;
         font-weight: 500;
     }
+    .dashboard .main-dashboard-home img{
+        width: 350px;
+    }
 }
 @media (min-width:992px) and (max-width:1150px){
     .market .products .card-body .prod_data span, .preview .card-body .prod_data span{
@@ -1999,6 +2024,9 @@ table tr td,table th{
     .dashboard .dash-holder .elect_device_container label{
         font-size: 15px;
         font-weight: 500;
+    }
+    .dashboard .main-dashboard-home img{
+        width: 350px;
     }
    
 }
