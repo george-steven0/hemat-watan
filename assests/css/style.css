@@ -497,7 +497,12 @@ footer.main_footer{
     border: 2px solid #249e8e;
     padding: 10px;
     margin: auto auto 30px auto;
+    transition: all .5s ease-in-out;
 }
+.market .products .card:hover,.preview .card:hover{
+    box-shadow: 0px 0px 15px #44c2b3;
+}
+
 .market .products .card-body{
     position: relative;
 }
@@ -526,8 +531,18 @@ footer.main_footer{
     top: 12%;
     right: 0px;
     width: 100%;
+    height: 60px;
     text-align: center;
     margin: auto;
+    background-image: url('../img/prod_img.png');
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-size: 50px;
+    transition: all .7s ease-in-out;
+}
+.market .products .card-body .prod_img:hover{
+    background-image: url('../img/sub_cont_img1.png');
+
 }
 .market .products .card-body .prod_img img{
     width: 50px;
@@ -561,6 +576,7 @@ footer.main_footer{
     width: 15px;
     height: 20px;
 }
+
 /* market products */
 /* market page */
 
@@ -740,6 +756,7 @@ footer.main_footer{
     border: 2px solid #249e8e;
     padding: 10px;
     margin: auto auto 30px auto;
+    transition: all .5s ease-in-out;
 }
 .preview .card-body{
     position: relative;
@@ -768,8 +785,17 @@ footer.main_footer{
     top: 12%;
     right: 0px;
     width: 100%;
+    height: 60px;
     text-align: center;
     margin: auto;
+    background-image: url('../img/prod_img.png');
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-size: 50px;
+    transition: all .7s ease-in-out;
+}
+.preview .card-body .prod_img:hover{
+    background-image: url('../img/fam.png');
 }
 .preview .card-body .prod_img img{
     width: 50px;
@@ -1341,6 +1367,95 @@ table tr td,table th{
     text-align: center;
 }
 
+/* login */
+
+#login_body{
+    width: 100%;
+    height: auto;
+    
+}
+.login{
+    direction: ltr;
+    background-image: url('../img/edu_card.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.login .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+}
+.login .login-form_cont{
+    margin: auto;
+}
+.login .form_container{
+    position: relative;
+    top: -1500px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 18px;
+    box-shadow: 1px 1px 7px rgba(102, 101, 101, 0.555);
+    display: block;
+}
+
+.login .login_text,.reg_text{
+    margin-bottom: 20px;
+    color: rgba(65, 105, 225,.9);
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.login .login_text:hover{
+    color:   rgba(65, 105, 225,.7);
+}
+.login .login_form input,.reg_container input{
+    padding: 25px 10px;
+    margin-bottom: 15px;
+    color: rgba(99, 134, 230, 0.9);
+}
+.reg_container input:focus{
+    color: rgba(99, 134, 230, 0.9);
+}
+.login .remember_forget{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.login .remember_check{
+    float: left;
+}
+.login .forget_password{
+    float: right;
+}
+.login .login_btn,.login .reg_btn{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.login .login_btn button,.login .reg_btn a{
+    width: 50%;
+}
+.clear{
+    clear: both;
+}
+.login_image img{
+    width: 100%;
+}
+
+/* Register Form */
+.login .reg_container{
+    position: relative;
+    top: -1500px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 1px 1px 7px rgba(102, 101, 101, 0.555);
+}
+.login .to_login{
+    margin-top: 10px;
+}
+
 
 
 
@@ -1559,6 +1674,9 @@ table tr td,table th{
     .dashboard .main-dashboard-home img{
         width: 100px;
     }
+    .login,.login .overlay{
+        height: auto;
+    }
     
 }
 @media (min-width:430px) and (max-width:530px){
@@ -1682,6 +1800,7 @@ table tr td,table th{
     .dashboard .main-dashboard-home img{
         width: 150px;
     }
+   
 }
 @media (min-width:530px) and (max-width:575.6px){
     .preview .prev_btn .select-wrapper{
@@ -1910,6 +2029,9 @@ table tr td,table th{
         font-size: 12px;
     }
       
+    .login,.login .overlay{
+        height: auto;
+    }
 }
 @media (min-width:765px) and (max-width:992.6px){
     .top_header .header_links a{
@@ -2030,6 +2152,7 @@ table tr td,table th{
     }
    
 }
+
 @media (min-width:1550px) and (max-width:2250px){
     .preview .prod_details .prev_data{
         margin-top: 7%;

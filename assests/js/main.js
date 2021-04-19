@@ -14,6 +14,46 @@ $(document).ready(function(){
     $('.fav_icon i').on('click',function () {
         $(this).toggleClass('fas fa-heart')
     })
+
+
+
+
+
+/* login and register Pages */
+
+$('.login .form_container').animate({
+    top:"60px"
+},800)
+
+$('.login #to_register').on('click',function() {
+   
+    $('.reg_cont').css({
+        display:"block"
+    });
+
+   $('.login .form_container').animate({
+        top:"-1500px"
+   },500)
+   $('.login .reg_container').animate({
+    top:"-330px"
+},500);
+})
+
+$('#to_login').on('click',function() {
+   
+$('.form_container').animate({
+        top:"60px"
+   },500)
+   $('.reg_container').animate({
+    top:"-1500px"
+},500);
+})
+
+
+
+
+
+
 })
 
 
