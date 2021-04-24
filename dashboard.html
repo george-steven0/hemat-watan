@@ -60,11 +60,23 @@
                             <br />
 
                             <div class="elect_device_collapse">
-                                <a class="active" id="list-market-list" data-toggle="collapse" href="#offer_list" role="button" aria-expanded="false" aria-controls="collapseExample">عروض وخصومات</a><i class="fas fa-tags"></i>
+                                <a class="active" id="list-offer-list" data-toggle="collapse" href="#offer_list" role="button" aria-expanded="false" aria-controls="collapseExample">عروض وخصومات</a><i class="fas fa-tags"></i>
                                 <div class="collapse" id="offer_list">
                                     <div class="list-group sub_list" id="list-tab" role="tablist">
-                                        <a id="list-market-list" data-toggle="list" href="#offer_tab" role="tab" aria-controls="home">كل العروض </a>
-                                        <a id="list-market-list" data-toggle="list" href="#add_offer_tab" role="tab" aria-controls="home">اضف عرض</a>
+                                        <a id="list-offer-list" data-toggle="list" href="#offer_tab" role="tab" aria-controls="home">كل العروض </a>
+                                        <a id="list-offer-add-list" data-toggle="list" href="#add_offer_tab" role="tab" aria-controls="home">اضف عرض</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <br/>
+                            <div class="elect_device_collapse">
+                                <a class="active" id="list-course-list" data-toggle="collapse" href="#course_list" role="button" aria-expanded="false" aria-controls="collapseExample">كورسات</a><i class="fas fa-chalkboard-teacher"></i>
+                                <div class="collapse" id="course_list">
+                                    <div class="list-group sub_list" id="list-tab" role="tablist">
+                                        <a id="list-course-all-list" data-toggle="list" href="#all_course" role="tab" aria-controls="home">جميع الكورسات </a>
+                                        <a id="list-course-add-list" data-toggle="list" href="#add_course" role="tab" aria-controls="home">أضف كورس </a>
+                                        <a id="list-course-section-list" data-toggle="list" href="#add_section_tab" role="tab" aria-controls="home">أضف قسم</a>
                                     </div>
                                 </div>
                             </div>
@@ -89,8 +101,8 @@
 
                     <div class="col-lg-10 col-md-9 col-8 main_tabs">
                         <div class="tab-content"  id="nav-tabContent">
-                            <!-- جزء الاجهزة الكهربائية -->
-                            <div class="tab-pane fade show active" id="" role="tabpanel" aria-labelledby="list-home-list">
+                           
+                            <div class="tab-pane fade show active" id="" role="tabpanel" aria-labelledby="list-dash-list">
                                 <div class="container-fluid">
                                     <div class="row">
                                         <div class="main-dashboard-home">
@@ -102,6 +114,7 @@
                                     </div>
                                 </div>
                             </div>
+                             <!-- جزء الاجهزة الكهربائية -->
                             <div class="tab-pane fade" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
                                 <div class="container-fluid">
                                     <div class="row">
@@ -1411,7 +1424,7 @@
                             <!-- market part-->
 
                             <!-- offer tabs -->
-                            <div class="tab-pane fade " id="offer_tab" role="tabpanel" aria-labelledby="list-market-new-prod-list">
+                            <div class="tab-pane fade " id="offer_tab" role="tabpanel" aria-labelledby="list-offer-list">
                                 <div class="new-offer">
                                     <div class="container-fluid">
                                         <div class="form">
@@ -1439,8 +1452,12 @@
                                                                     <td>
                                                                         <div>150 $</div>
                                                                     </td>
-                                                                    <td>10%</td>
-                                                                    <td>135 $</td>
+                                                                    <td>
+                                                                        <div>10%</div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div>135 $</div>
+                                                                    </td>
                                                                     <td>
                                                                         <div>
                                                                             <!-- Button trigger modal -->
@@ -1491,7 +1508,7 @@
                                 </div>
                             </div> <!-- كل العروض -->
 
-                            <div class="tab-pane fade " id="add_offer_tab" role="tabpanel" aria-labelledby="list-market-new-prod-list">
+                            <div class="tab-pane fade " id="add_offer_tab" role="tabpanel" aria-labelledby="list-offer-add-list">
                                 <div class="new-offer">
                                     <div class="container-fluid">
                                         <div class="form">
@@ -1566,8 +1583,159 @@
                                     </div>
                                 </div>
                             </div> <!-- اضف عرض جديد -->
-
                             <!-- offer tabs -->
+
+                            <!-- course tabs -->
+                            <div class="tab-pane fade " id="all_course" role="tabpanel" aria-labelledby="list-course-all-list">
+                                <div class="course-list">
+                                    <div class="container-fluid">
+                                        <div class="form">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="table-responsive cate_table_cont">
+                                                        <table class="table ">
+                                                            <thead>
+                                                                <th>عنوان الكورس</th>
+                                                                <th>صورة الكورس</th>
+                                                                <th>اسم الناشر</th>
+                                                                <th>السعر قبل الخصم</th>
+                                                                <th>السعر بعد الخصم</th>
+                                                                <th>وصف مختصر</th>
+                                                                <th>وصف تفصيلى</th>
+                                                                <th></th>
+                                                            </thead>
+
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div>الاسم</div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div><img src="assests/img/baby.png" /></div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div>د/ على السيد</div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div>150 $</div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div>135 $</div>
+                                                                    </td>
+
+                                                                    <td>
+                                                                        <div>وصف مختصر عن الكورس</div>
+                                                                    </td>
+
+                                                                    <td>
+                                                                        <div>وصف تفصيلى عن الكورس</div>
+                                                                    </td>
+
+                                                                    <td>
+                                                                        <div>
+                                                                            <!-- Button trigger modal -->
+                                                                            <button type="button" class="btn btn-warning" style="color:#fff" data-toggle="modal" data-target="#course_modal">
+                                                                                تعديل البيانات
+                                                                            </button>
+                                                                            
+                                                                            <!-- Modal -->
+                                                                            <div class="modal fade" id="course_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                                <div class="modal-dialog">
+                                                                                <div class="modal-content">
+                                                                                    <div class="modal-header">
+                                                                                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                        <span aria-hidden="true">&times;</span>
+                                                                                    </button>
+                                                                                    </div>
+                                                                                    <div class="modal-body">
+                                                                                        <form>
+                                                                                            <div class="row">
+                                                                                                <div class="offer-inputs col-sm-6 col-12"><input type="text" class="form-control" placeholder="عنوان الكورس" /></div>
+                                                                                                <div class="offer-inputs col-sm-6 col-12"><input type="file" class="form-control" placeholder="صورة الكورس" /></div>
+                                                                                                <div class="offer-inputs col-sm-6 col-12"><input type="text" class="form-control" placeholder="اسم ناشر الكورس" /></div>
+                                                                                                <div class="offer-inputs col-sm-6 col-12"><input type="number" class="form-control" placeholder="السعر الحالى" /></div>
+                                                                                                <div class="offer-inputs col-sm-6 col-12"><input type="number" class="form-control" placeholder="السعر بعد الخصم" /></div>
+                                                                                                <div class="offer-inputs col-sm-6 col-12"><input type="text" class="form-control" placeholder="وصف مختصر" /></div>
+                                                                                                <div class="offer-inputs col-sm-6 col-12"><input type="text" class="form-control" placeholder="وصف تفصيلى" /></div>
+
+                                                                                            </div>
+
+                                                                                        </form>
+                                                                                    </div>
+                                                                                    <div class="modal-footer">
+                                                                                        <button type="button" class="btn btn-success">Save changes</button>
+                                                                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- Modal -->
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- all courses-->
+
+                            <div class="tab-pane fade " id="add_course" role="tabpanel" aria-labelledby="list-course-add-list">
+                                <div class="container-fluid">
+                                    <form class="course_form">
+                                        <div class="row">
+
+                                            <div class="col-sm-6 col-12">
+                                                <label>عنوان الكورس</label>
+                                                <input type="text" class="form-control" required />
+                                            </div>
+                                            
+                                            <div class="col-sm-6 col-12">
+                                                <label> فيديو الكورس</label>
+                                                <input type="file" class="form-control" required />
+                                            </div>
+
+                                            <div class="col-sm-6 col-12">
+                                                <label>اسم الناشر</label>
+                                                <input type="text" class="form-control" required/>
+                                            </div>
+
+                                            <div class="col-sm-6 col-12">
+                                                <label>سعر الكورس الحالى</label>
+                                                <input type="number" class="form-control" required/>
+                                            </div>
+
+                                            <div class="col-sm-6 col-12">
+                                                <label> سعر الكورس بعد الخصم</label>
+                                                <input type="number" class="form-control" required/>
+                                            </div>
+
+                                            <div class="col-sm-6 col-12">
+                                                <label>وصف مختصر للكورس</label>
+                                                <textarea class="form-control" required></textarea>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <label>وصف تفصيلى للكورس</label>
+                                                <textarea class="form-control" ></textarea>
+                                            </div>
+
+                                            
+                                            <br/>
+                                           
+                                            <div class="col-12 text-center">
+                                                <button type="submit" class="btn btn-success add_new_btn">أضف منتج</button>
+                                            </div>
+
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>                            
+                            
                         </div> <!-- main tab content -->
 
                     </div>

@@ -1324,17 +1324,17 @@ table.dataTable thead .sorting_desc:after{
     width: 60px !important;
     height: 60px !important;
 }
-.dashboard .dash-holder .new-product label,.dashboard .dash-holder .edit-prod-form label{
+.dashboard .dash-holder .new-product label,.dashboard .dash-holder .edit-prod-form label, .dashboard .dash-holder .course_form label{
     font-size: 17px;
     font-weight: 600;
     color: rgb(53, 190, 53);
 }
-.dashboard .dash-holder .new-product input, .dashboard .dash-holder .new-product textarea,.dashboard .dash-holder .edit-prod-form input,.dashboard .dash-holder .edit-prod-form textarea{
+.dashboard .dash-holder .new-product input, .dashboard .dash-holder .new-product textarea,.dashboard .dash-holder .edit-prod-form input,.dashboard .dash-holder .edit-prod-form textarea,.dashboard .dash-holder .course_form input, .dashboard .dash-holder .course_form textarea{
     margin-bottom: 15px;
     color: rgb(39, 128, 39);
     resize: none;
 }
-.dashboard .dash-holder .new-product .add_new_btn,.dashboard .dash-holder .edit-prod-form .edit_btn{
+.dashboard .dash-holder .new-product .add_new_btn,.dashboard .dash-holder .edit-prod-form .edit_btn,.dashboard .dash-holder .course_form .add_new_btn{
     margin-top: 20px;
     padding: 10px 55px;
     border-radius: 20px;
@@ -1668,7 +1668,7 @@ table tr td,table th{
     .dashboard .dash-holder .new-product label, .dashboard .dash-holder .edit-prod-form label{
         font-size: 14px;
     }
-    .dashboard .dash-holder .new-product .add_new_btn,.dashboard .dash-holder .edit-prod-form .edit_btn{
+    .dashboard .dash-holder .new-product .add_new_btn,.dashboard .dash-holder .edit-prod-form .edit_btn,.dashboard .dash-holder .course_form .add_new_btn{
         padding: 8px 30px;
     }
     .dashboard .main-dashboard-home img{
