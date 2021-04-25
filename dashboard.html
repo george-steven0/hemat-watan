@@ -76,7 +76,8 @@
                                     <div class="list-group sub_list" id="list-tab" role="tablist">
                                         <a id="list-course-all-list" data-toggle="list" href="#all_course" role="tab" aria-controls="home">جميع الكورسات </a>
                                         <a id="list-course-add-list" data-toggle="list" href="#add_course" role="tab" aria-controls="home">أضف كورس </a>
-                                        <a id="list-course-section-list" data-toggle="list" href="#add_section_tab" role="tab" aria-controls="home">أضف قسم</a>
+                                        <a id="list-course-section-list" data-toggle="list" href="#add_section" role="tab" aria-controls="home">أضف قسم</a>
+                                        <a id="list-course-all-section-list" data-toggle="list" href="#all_section" role="tab" aria-controls="home">جميع الأقسام</a>
                                     </div>
                                 </div>
                             </div>
@@ -1603,6 +1604,7 @@
                                                                 <th>وصف مختصر</th>
                                                                 <th>وصف تفصيلى</th>
                                                                 <th></th>
+                                                                <th></th>
                                                             </thead>
 
                                                             <tbody>
@@ -1634,7 +1636,7 @@
                                                                     <td>
                                                                         <div>
                                                                             <!-- Button trigger modal -->
-                                                                            <button type="button" class="btn btn-warning" style="color:#fff" data-toggle="modal" data-target="#course_modal">
+                                                                            <button type="button" class="btn btn-warning" style="color:#fff; font-size: 13px;" data-toggle="modal" data-target="#course_modal">
                                                                                 تعديل البيانات
                                                                             </button>
                                                                             
@@ -1673,6 +1675,12 @@
                                                                             <!-- Modal -->
                                                                         </div>
                                                                     </td>
+
+                                                                    <td>
+                                                                        <div>
+                                                                            <button class="btn btn-danger">Delete</button>
+                                                                        </div>
+                                                                    </td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -1695,7 +1703,7 @@
                                             </div>
                                             
                                             <div class="col-sm-6 col-12">
-                                                <label> فيديو الكورس</label>
+                                                <label> صورة الكورس</label>
                                                 <input type="file" class="form-control" required />
                                             </div>
 
@@ -1728,13 +1736,252 @@
                                             <br/>
                                            
                                             <div class="col-12 text-center">
-                                                <button type="submit" class="btn btn-success add_new_btn">أضف منتج</button>
+                                                <button type="submit" class="btn btn-success add_new_btn">أضف الكورس</button>
                                             </div>
 
                                         </div>
                                     </form>
                                 </div>
-                            </div>                            
+                            </div> <!-- add course -->  
+                            
+                            <div class="tab-pane fade " id="add_section" role="tabpanel" aria-labelledby="list-course-section-list">
+                                <div class="container-fluid">
+                                    <div class="row">
+
+                                        <div class="col-12">
+                                            <div class="add_cate_btn">
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#section_modal">
+                                                    إضف قسم 
+                                                </button>
+                                                
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="section_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form>
+                                                               <div class="row">
+                                                                   <div class="col-md-6 col-12">
+                                                                       <select class="form-control">
+                                                                           <option selected disabled>Select Course</option>
+                                                                           <option>1</option>
+                                                                           <option>2</option>
+                                                                           <option>3</option>
+                                                                       </select>
+                                                                   </div>
+
+                                                                   <div class="col-md-6 col-12">
+                                                                       <input type="text" class="form-control" placeholder="أسم القسم" />
+                                                                   </div>
+                                                               </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-success">Add Section</button>
+                                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Modal -->
+
+                                                <!-- category Table-->
+                                                <div class="cate_table_cont table-responsive">
+                                                    <table class="table" id="TableSearch">
+                                                        <thead>
+                                                            <th>#</th>
+                                                            <th>أسم الكورس</th>
+                                                            <th>اسم القسم</th>
+                                                            <th></th>
+                                                            <th></th>
+                                                        </thead>
+
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><div>1</div></td>
+                                                                <td>
+                                                                    <div>الاسم</div>
+                                                                </td>
+                                                                    
+                                                                <td>
+                                                                    <div>الاسم</div>
+                                                                </td>
+
+                                                                <td>
+                                                                    <div>
+                                                                        <button type="button" style="color: #fff;" class="btn btn-warning" data-toggle="modal" data-target="#editsection">
+                                                                            تعديل
+                                                                          </button>
+                                                                          
+                                                                          <!-- Modal -->
+                                                                          <div class="modal fade" id="editsection" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+                                                                            <div class="modal-dialog">
+                                                                              <div class="modal-content">
+                                                                                <div class="modal-header">
+                                                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                    <span aria-hidden="true">&times;</span>
+                                                                                  </button>
+                                                                                </div>
+                                                                                <div class="modal-body">
+                                                                                    <form>
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-6 col-12">
+                                                                                                <select class="form-control">
+                                                                                                    <option selected disabled>Select Course</option>
+                                                                                                    <option>1</option>
+                                                                                                    <option>2</option>
+                                                                                                    <option>3</option>
+                                                                                                </select>
+                                                                                            </div>
+                         
+                                                                                            <div class="col-md-6 col-12">
+                                                                                                <input type="text" class="form-control" placeholder="Write Section" />
+                                                                                            </div>
+                                                                                    </form>
+                                                                                </div>
+                                                                                <div class="modal-footer">
+                                                                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                                  <button type="button" class="btn btn-success">Save changes</button>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                    </div>
+                                                                </td>
+
+                                                                <td>
+                                                                    <div class="delete_btn">
+                                                                        <button class="btn btn-danger">Delete</button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- category Table-->
+
+                                            </div>
+                                        </div> <!-- col-12 -->
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade " id="all_section" role="tabpanel" aria-labelledby="list-course-all-section-list">
+                                <div class="container-fluid">
+                                    <div class="row">
+
+                                        <div class="col-12">
+                                            <div class="add_cate_btn video_table">
+                                               
+
+                                                <!-- category Table-->
+                                                <div class="cate_table_cont table-responsive">
+                                                    <table class="table" id="TableSearch">
+                                                        <thead>
+                                                            <th>#</th>
+                                                            <th>أسم الكورس</th>
+                                                            <th>اسم القسم</th>
+                                                            <th></th>
+                                                            
+                                                        </thead>
+
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><div>1</div></td>
+                                                                <td>
+                                                                    <div>الاسم</div>
+                                                                </td>
+                                                                    
+                                                                <td>
+                                                                    <div>الاسم</div>
+                                                                </td>
+
+                                                                <td>
+                                                                    <div class="show_video">
+                                                                        <button class="btn btn-outline-info">عرض الفديوهات</button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- category Table-->
+
+                                            </div>
+                                        </div> <!-- col-12 -->
+
+                                        <div class="col-12">
+                                            <div class="videos_page">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <br/>
+                                                        <div class="col-12 text-center">
+                                                            <h1 class="text-info" style="font-weight: bold;">فيديوهات الكورس</h1>
+                                                        </div>
+                                                         <br/>
+                                                        <div class="col-lg-4 col-md-6 col-12">
+                                                            <div class="video_cont">
+                                                                <video controls>
+                                                                    <source src="assests/img/Service_center.mp4" type="video/mp4">
+                                                                    <source src="assests/img/Service_center.mp4" type="video/ogg">
+                                                                     Your browser does not support the video tag.
+                                                                  </video>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-4 col-md-6 col-12">
+                                                            <div class="video_cont">
+                                                                <video controls>
+                                                                    <source src="assests/img/Service_center.mp4" type="video/mp4">
+                                                                    <source src="assests/img/Service_center.mp4" type="video/ogg">
+                                                                     Your browser does not support the video tag.
+                                                                  </video>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-4 col-md-6 col-12">
+                                                            <div class="video_cont">
+                                                                <video controls>
+                                                                    <source src="assests/img/Service_center.mp4" type="video/mp4">
+                                                                    <source src="assests/img/Service_center.mp4" type="video/ogg">
+                                                                     Your browser does not support the video tag.
+                                                                  </video>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-4 col-md-6 col-12">
+                                                            <div class="video_cont">
+                                                                <video controls>
+                                                                    <source src="assests/img/Service_center.mp4" type="video/mp4">
+                                                                    <source src="assests/img/Service_center.mp4" type="video/ogg">
+                                                                     Your browser does not support the video tag.
+                                                                  </video>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="col-12 text-center prev_video_btn">
+                                                            <button class="btn btn-info">الرجوع الى الصفحه</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                             
                         </div> <!-- main tab content -->
 

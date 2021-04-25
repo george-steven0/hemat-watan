@@ -78,6 +78,17 @@ $('.edit-prod-form .edit_btn').on('click',function(){
     $('.new_product_container').fadeIn(250);
 })
 
+/* show video */
+$('.dashboard .show_video').on('click',function(){
+    $('.dashboard .video_table').fadeOut(200);
+    $('.dashboard .videos_page').fadeIn(250)
+})
+
+$('.dashboard .prev_video_btn').on('click',function(){
+    $('.dashboard .video_table').fadeIn(200);
+    $('.dashboard .videos_page').fadeOut(250)
+})
+
 
 
 
