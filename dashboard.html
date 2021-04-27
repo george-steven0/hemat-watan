@@ -103,7 +103,7 @@
                     <div class="col-lg-10 col-md-9 col-8 main_tabs">
                         <div class="tab-content"  id="nav-tabContent">
                            
-                            <div class="tab-pane fade show active" id="" role="tabpanel" aria-labelledby="list-dash-list">
+                            <div class="tab-pane fade " id="" role="tabpanel" aria-labelledby="list-dash-list">
                                 <div class="container-fluid">
                                     <div class="row">
                                         <div class="main-dashboard-home">
@@ -1833,12 +1833,7 @@
                                                                                     <form>
                                                                                         <div class="row">
                                                                                             <div class="col-md-6 col-12">
-                                                                                                <select class="form-control">
-                                                                                                    <option selected disabled>Select Course</option>
-                                                                                                    <option>1</option>
-                                                                                                    <option>2</option>
-                                                                                                    <option>3</option>
-                                                                                                </select>
+                                                                                                <input type="text" disabled class="form-control" />
                                                                                             </div>
                          
                                                                                             <div class="col-md-6 col-12">
@@ -1876,7 +1871,7 @@
                                 </div>
                             </div>
 
-                            <div class="tab-pane fade " id="all_section" role="tabpanel" aria-labelledby="list-course-all-section-list">
+                            <div class="tab-pane fade show active" id="all_section" role="tabpanel" aria-labelledby="list-course-all-section-list">
                                 <div class="container-fluid">
                                     <div class="row">
 
@@ -1891,6 +1886,7 @@
                                                             <th>#</th>
                                                             <th>أسم الكورس</th>
                                                             <th>اسم القسم</th>
+                                                            <th id="upload_head"></th>
                                                             <th></th>
                                                             
                                                         </thead>
@@ -1906,6 +1902,15 @@
                                                                     <div>الاسم</div>
                                                                 </td>
 
+                                                                <td>
+                                                                    <div class="up_video_cont">
+                                                                        <input type="file" class="up_video" multiple/>
+                                                                        <div class="custom_upload">
+                                                                            أضف فيديو
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                </td>
                                                                 <td>
                                                                     <div class="show_video">
                                                                         <button class="btn btn-outline-info">عرض الفديوهات</button>
