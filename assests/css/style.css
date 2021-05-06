@@ -1366,9 +1366,6 @@ table.dataTable thead .sorting_desc:after{
     margin-bottom: 15px;
 }
 
-.dashboard .videos_page{
-    display: none;
-}
 .dashboard .dash-holder .prev_video_btn{
     margin-top: 30px;
 }
@@ -1389,6 +1386,17 @@ table.dataTable thead .sorting_desc:after{
     padding: .375rem .75rem;
     cursor: pointer;
 }
+
+/* video page */
+
+.videos_page h1{
+    margin: 50px auto ;
+}
+.videos_page video{
+    width: 100%;
+    height: 400px;
+}
+/* video page */
 
 
 
