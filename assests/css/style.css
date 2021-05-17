@@ -2500,6 +2500,9 @@ table.dataTable thead .sorting_desc:after{
 .show-prod .benf-cards .card .card-body span,.show-prod .title{
     color: #002b4d;
 }
+.show-prod .title{
+    margin-bottom: 20px;
+}
 .show-prod .title i{
     margin-left: 10px;
     font-size: 25px;
