@@ -90,6 +90,24 @@ $('.dashboard .prev_video_btn').on('click',function(){
 })
 
 
+/* proceed to buy */
+
+$('.cart-container .proceed-to').on('click',function(){
+    $('.cart-container').fadeOut(200);
+    $('.buy-process-container').fadeIn(250)
+})
+
+$('.buy-process-container .prev-page').on('click',function(){
+    $('.buy-process-container').fadeOut(250)
+    $('.cart-container').fadeIn(200);
+})
+
+
+
+
+
+/* chat box */
+/* chat box */
 
 
 
