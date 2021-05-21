@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assests/css/slick.css" />
     <link rel="stylesheet" href="assests/css/slick-theme.css" />
     <link rel="stylesheet" href="assests/css/style.css" />
-    <title>Company Profile</title>
+    <title>Service Provider Profile</title>
     <style>
         footer.main_footer {
             background-color: #eee;
@@ -71,11 +71,11 @@
     </div>
     <!-- top header -->
 
-    <div class="profile assoc-profile">
+    <div class="profile serv-prov-profile">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-3 col-4">
-                    <div class="side_nav_container company-nav">
+                    <div class="side_nav_container service-provider-nav">
                         <div class="profile-img">
                             <img src="assests/img/user.png" />
                         </div>
@@ -92,12 +92,12 @@
                         <!-- Link List-->
                         <div class="link_cont">
                             <div class="list-group" id="myList" role="tablist">
-                                <a class="" data-toggle="list" href="#company-view-board" role="tab" aria-controls="home"><i class="fas fa-laptop-code"></i> لوحة العرض </a>
-                                <a class="" data-toggle="list" href="#company-offers" role="tab" aria-controls="home"><i class="fas fa-gifts"></i>عروض </a>
-                                <a class="" data-toggle="list" href="#comp-inbox" role="tab" aria-controls="home"><i class="fas fa-envelope"></i>  صندوق البريد</a>
-                                <a class="" data-toggle="list" href="#company-personal-data" role="tab" aria-controls="home"><i class="fas fa-users"></i>  بيانات الشركة</a>
-                                <a class="" data-toggle="list" href="#company-add-product" role="tab" aria-controls="home"><i class="fas fa-boxes"></i> إضافة منتج </a>
-                                <a class="" data-toggle="list" href="#benfits" role="tab" aria-controls="home"><i class="fas fa-funnel-dollar"></i>  عرض المنتجات</a>
+                                <a class="" data-toggle="list" href="#serv-prov-view-board" role="tab" aria-controls="home"><i class="fas fa-laptop-code"></i> لوحة العرض </a>
+                                <a class="" data-toggle="list" href="#serv-prov-offers" role="tab" aria-controls="home"><i class="fas fa-gifts"></i>عروض </a>
+                                <a class="" data-toggle="list" href="#serv-prov-inbox" role="tab" aria-controls="home"><i class="fas fa-envelope"></i>  صندوق البريد</a>
+                                <a class="" data-toggle="list" href="#serv-prov-personal-data" role="tab" aria-controls="home"><i class="fas fa-users"></i>  بيانات مزود الخدمة</a>
+                                <a class="" data-toggle="list" href="#serv-prov-add-product" role="tab" aria-controls="home"><i class="fas fa-boxes"></i> إضافة خدمة </a>
+                                <a class="" data-toggle="list" href="#serv-prov-benfits" role="tab" aria-controls="home"><i class="fas fa-assistive-listening-systems"></i>  عرض الخدمات</a>
                               </div>
                         </div>
                         <!-- Link List-->
@@ -107,7 +107,7 @@
 
                 <div class="col-md-9 col-8 tab-content">
                      
-                    <div class="tab-pane fade " id="company-view-board" role="tabpanel">
+                    <div class="tab-pane fade " id="serv-prov-view-board" role="tabpanel">
                         <div class="comp-board">
                             <div class="container-fluid">
                                 <div class="row">
@@ -344,7 +344,7 @@
                     </div> <!-- view board -->
 
                     <!-- company offers-->
-                    <div class="tab-pane fade " id="company-offers" role="tabpanel">
+                    <div class="tab-pane fade " id="serv-prov-offers" role="tabpanel">
                         <div class="comp-offer">
                             <div class="container-fluid">
                                 <div class="row">
@@ -655,7 +655,7 @@
                     </div><!-- company offers-->
 
                      <!-- Inbox Container-->
-                     <div class="tab-pane fade " id="comp-inbox" role="tabpanel">
+                     <div class="tab-pane fade " id="serv-prov-inbox" role="tabpanel">
                         <div class="inbox comp-inbox">
                             <div class="row">
                                 <div class="col-12  title">
@@ -836,15 +836,17 @@
                     </div> <!-- inbox container -->
 
                     <!-- comp profile details-->
-                    <div class="tab-pane fade " id="company-personal-data" role="tabpanel">
+                    <div class="tab-pane fade " id="serv-prov-personal-data" role="tabpanel">
                         <div class="personal-data comp-personal-data">
                             <form class="prsonal-form">
                                 <div class="row">
-
+                                    <div class="col-12 title text-right">
+                                       <i class="fas fa-building"></i> <span>بيانات مزود الخدمة</span>
+                                    </div>
                                     <div class="col-md-5 col-12 offset-2">
                                         <div class="input">
                                             <input type="text" required>
-                                            <label>إسم الشركة</label>
+                                            <label>إسم مزود الخدمة</label>
                                             <div class="bar"></div>
                                             <div class="highlight"></div>
                                             <div class="input-icon">
@@ -857,7 +859,7 @@
                                     <div class="col-md-5 col-12">
                                         <div class="input">
                                             <input type="text" required>
-                                            <label>إسم مالك الشركة</label>
+                                            <label>إسم مالك مزود الخدمة</label>
                                             <div class="bar"></div>
                                             <div class="highlight"></div>
                                             <div class="input-icon">
@@ -939,92 +941,63 @@
                         </div>
                     </div> <!-- comp profile details -->
 
-                    <div class="tab-pane fade " id="company-add-product" role="tabpanel">
-                        <div class="add-product">
+                    <div class="tab-pane fade " id="serv-prov-add-product" role="tabpanel">
+                        <div class="add-product add-service">
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="title col-12">
-                                        <i class="fab fa-product-hunt"></i> <span>إضافة منتجات</span>
+                                        <i class="fab fa-product-hunt"></i> <span>إضافة خدمة</span>
                                     </div>
                                 </div>
 
                                 <div class="product-input">
                                     <div class="row">
                                         <div class="col-12 prod-title">
-                                            <i class="fas fa-plus-square"></i> <span>إضافة منتجات</span>
+                                            <i class="fas fa-plus-square"></i> <span>إضافة </span>
                                         </div>
 
-                                        <div class="col-lg-6 col-md-8 col-12 offset-lg-6">
-                                            <div class="input-group mb-4">
-                                                <div class="input-group-append">
-                                                    <span class="input-group-text" id="basic-addon2">الإسم :</span>
-                                                </div>
-                                                <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                            </div>
-                                        </div>
 
                                         <div class="col-lg-6 col-md-8 col-12">
                                             <div class="input-group mb-4 quantity">
-                                                <div class="input-group-append">
-                                                    <span class="input-group-text" id="basic-addon2">الكمية :</span>
+                                                <div class="input-group">
+                                                    <span class="input-group-text" id="basic-addon2">نوع الخدمة :</span>
                                                 </div>
 
-                                                <input type="radio"  aria-describedby="basic-addon2"><label for="">حبة</label>
-                                                <input type="radio"  aria-describedby="basic-addon2"><label for="">كرتون</label>
-                                                <input type="radio"  aria-describedby="basic-addon2"><label for="">شد</label>
-                                                <input type="radio"  aria-describedby="basic-addon2"><label for="">درزن</label>
+                                                <input type="radio"  aria-describedby="basic-addon2"><label for="">تعليم وتدريب</label>
+                                                <input type="radio"  aria-describedby="basic-addon2"><label for="">تعليم</label>
+                                                <input type="radio"  aria-describedby="basic-addon2"><label for="">تدريب</label>
                                                 
                                             </div>
                                         </div>
 
                                         <div class="col-lg-6 col-md-8 col-12 offset-lg-6">
-                                            <div class="input-group mb-4">
-                                                <div class="input-group-append">
-                                                    <span class="input-group-text" id="basic-addon2">الوحدة :</span>
+                                            <div class="input-group mb-4 quantity">
+                                                <div class="input-group">
+                                                    <span class="input-group-text" id="basic-addon2">مدة الخدمة :</span>
                                                 </div>
-                                                <select class="unit-type form-control">
+
+                                                <select class="form-control">
                                                     <option>1</option>
                                                     <option>2</option>
                                                     <option>3</option>
                                                 </select>
+                                                
                                             </div>
                                         </div>
 
-                                        <div class="col-lg-6 col-md-8 col-12">
-                                            <div class="input-group mb-4">
-                                                <div class="input-group-append">
-                                                    <span class="input-group-text" id="basic-addon2">الوزن :</span>
-                                                </div>
-                                                <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                            </div>
-                                        </div>
+                                      
 
                                         <div class="col-lg-6 col-md-8 col-12 offset-lg-6">
                                             <div class="input-group mb-4">
-                                                <div class="input-group-append">
-                                                    <span class="input-group-text" id="basic-addon2">المواصفات :</span>
+                                                <div class="input-group">
+                                                    <span class="input-group-text" id="basic-addon2">تفاصيل الخدمة :</span>
                                                 </div>
-                                                <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <textarea class="form-control" placeholder="تفاصيل" aria-label="Recipient's username" aria-describedby="basic-addon2"></textarea>
                                             </div>
                                         </div>
 
-                                        <div class="col-lg-6 col-md-8 col-12">
-                                           <div class="up-btn">
-                                            <span class="text-center" style="width: 100%;">إضافة منتج من ملف أكسيل</span>
-                                            <div class="input-group mb-4">
-                                                
-                                                <div class="custom-file">
-                                                  <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-                                                  <label class="custom-file-label text-center" for="inputGroupFile01">أختر ملف</label>
-                                                </div>
-                                                <div class="input-group-append">
-                                                    <span class="input-group-text" id="inputGroupFileAddon01"><i class="fas fa-cloud-upload-alt"></i></span>
-                                                </div>
-                                            </div>
-                                           </div>
-                                        </div>
-
-                                        <div class="col-lg-6 col-md-8 col-12 save-btn">
+                                    <br/>
+                                        <div class="col-12 save-btn">
                                             <button type="button" class="btn btn-primary">حفظ</button>
                                         </div>
 
@@ -1033,33 +1006,46 @@
                                 </div>
                             </div>
                         </div>
-                    </div> <!-- add product -->
+                    </div> <!-- add service -->
 
-                    <div class="tab-pane fade show active" id="benfits" role="tabpanel">
+                    <div class="tab-pane fade show active" id="serv-prov-benfits" role="tabpanel">
                         <div class="benfits-container show-prod">
-                            <div class="row">
-                                <div class="col-12 title">
-                                    <i class="fab fa-product-hunt"></i> <span>عرض المنتجات</span>
+                            <div class="row mb-5 service-fix">
+                                <div class="col-md-6 col-12 title offset-md-1">
+                                    <i class="fab fa-product-hunt"></i> <span>عرض الخدمات</span>
+                                </div>
+
+                                <div class="col-md-5 col-12 filter">
+                                    <div class="filter-container">
+                                        <div class="show-all">
+                                            <i class="fas fa-filter"></i><span>عرض الكل</span>
+                                        </div>
+                                        <div class="add-serv">
+                                            <i class="fas fa-plus-circle"></i><br><span> إضف خدمة</span>
+                                        </div>
+                                        <div class="serv-qunt">
+                                            <span>عدد الخدمات</span><br>
+                                            <span>55</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="benf-cards">
+                            <div class="benf-cards service-card">
                                 <div class="row">
-                                    <div class="col-lg-4 col-md-6 col-12">
+                                    <div class="col-lg-3 col-md-4 col-12">
                                         <div class="card">
-                                            <div class="card-body">
-                                              <div class="card-title">
-                                                  <img src="assests/img/user.png" />
-                                              </div>
-                                              
-                                              <div class="card-body">
-                                                    <div><span>إسم المستخدم</span></div>
-                                                    <div><span>عدد أفراد الاسرة:</span> <Span>7</Span></div>
-                                                    <div><span>النقاط الحالية:</span> <span>200</span></div>
-                                                    <div><span>النقاط المستخدمة:</span> <span>800</span></div>
-                                              </div>
+                                            <div class="card-title">
+                                                <img src="assests/img/edu_card2.jpg" />
+                                            </div>
 
-                                              <div class="card-footer">
+                                            <div class="card-body">
+                                                <p>كورس تعليم الاطفال</p>
+                                                <i class="fas fa-seedling"></i><span>عدد النقط 15 نقطة</span> <br>
+                                                <span>شامل ضريبة القيمة</span>
+                                            </div>
+
+                                            <div class="card-footer">
                                                 <div class="row">
                                                     <div class="col-3">
                                                         <i class="fas fa-times-circle card-footer-icon"></i>
@@ -1077,27 +1063,23 @@
                                                         <i class="fas fa-eye card-footer-icon"></i>
                                                     </div>
                                                 </div>
-                                              </div>
-
                                             </div>
                                           </div>
                                     </div>
 
-                                    <div class="col-lg-4 col-md-6 col-12">
+                                    <div class="col-lg-3 col-md-4 col-12">
                                         <div class="card">
-                                            <div class="card-body">
-                                              <div class="card-title">
-                                                  <img src="assests/img/user.png" />
-                                              </div>
-                                              
-                                              <div class="card-body">
-                                                    <div><span>إسم المستخدم</span></div>
-                                                    <div><span>عدد أفراد الاسرة:</span> <Span>7</Span></div>
-                                                    <div><span>النقاط الحالية:</span> <span>200</span></div>
-                                                    <div><span>النقاط المستخدمة:</span> <span>800</span></div>
-                                              </div>
+                                            <div class="card-title">
+                                                <img src="assests/img/edu_card3.png" />
+                                            </div>
 
-                                              <div class="card-footer">
+                                            <div class="card-body">
+                                                <p>كورس تعليم الاطفال</p>
+                                                <i class="fas fa-seedling"></i><span>عدد النقط 15 نقطة</span> <br>
+                                                <span>شامل ضريبة القيمة</span>
+                                            </div>
+
+                                            <div class="card-footer">
                                                 <div class="row">
                                                     <div class="col-3">
                                                         <i class="fas fa-times-circle card-footer-icon"></i>
@@ -1115,27 +1097,23 @@
                                                         <i class="fas fa-eye card-footer-icon"></i>
                                                     </div>
                                                 </div>
-                                              </div>
-
                                             </div>
                                           </div>
                                     </div>
 
-                                    <div class="col-lg-4 col-md-6 col-12">
+                                    <div class="col-lg-3 col-md-4 col-12">
                                         <div class="card">
-                                            <div class="card-body">
-                                              <div class="card-title">
-                                                  <img src="assests/img/user.png" />
-                                              </div>
-                                              
-                                              <div class="card-body">
-                                                    <div><span>إسم المستخدم</span></div>
-                                                    <div><span>عدد أفراد الاسرة:</span> <Span>7</Span></div>
-                                                    <div><span>النقاط الحالية:</span> <span>200</span></div>
-                                                    <div><span>النقاط المستخدمة:</span> <span>800</span></div>
-                                              </div>
+                                            <div class="card-title">
+                                                <img src="assests/img/edu_card.jpg" />
+                                            </div>
 
-                                              <div class="card-footer">
+                                            <div class="card-body">
+                                                <p>كورس تعليم الاطفال</p>
+                                                <i class="fas fa-seedling"></i><span>عدد النقط 15 نقطة</span> <br>
+                                                <span>شامل ضريبة القيمة</span>
+                                            </div>
+
+                                            <div class="card-footer">
                                                 <div class="row">
                                                     <div class="col-3">
                                                         <i class="fas fa-times-circle card-footer-icon"></i>
@@ -1153,27 +1131,23 @@
                                                         <i class="fas fa-eye card-footer-icon"></i>
                                                     </div>
                                                 </div>
-                                              </div>
-
                                             </div>
                                           </div>
                                     </div>
 
-                                    <div class="col-lg-4 col-md-6 col-12">
+                                    <div class="col-lg-3 col-md-4 col-12">
                                         <div class="card">
-                                            <div class="card-body">
-                                              <div class="card-title">
-                                                  <img src="assests/img/user.png" />
-                                              </div>
-                                              
-                                              <div class="card-body">
-                                                    <div><span>إسم المستخدم</span></div>
-                                                    <div><span>عدد أفراد الاسرة:</span> <Span>7</Span></div>
-                                                    <div><span>النقاط الحالية:</span> <span>200</span></div>
-                                                    <div><span>النقاط المستخدمة:</span> <span>800</span></div>
-                                              </div>
+                                            <div class="card-title">
+                                                <img src="assests/img/slide-1.jpg" />
+                                            </div>
 
-                                              <div class="card-footer">
+                                            <div class="card-body">
+                                                <p>كورس تعليم الاطفال</p>
+                                                <i class="fas fa-seedling"></i><span>عدد النقط 15 نقطة</span> <br>
+                                                <span>شامل ضريبة القيمة</span>
+                                            </div>
+
+                                            <div class="card-footer">
                                                 <div class="row">
                                                     <div class="col-3">
                                                         <i class="fas fa-times-circle card-footer-icon"></i>
@@ -1191,27 +1165,23 @@
                                                         <i class="fas fa-eye card-footer-icon"></i>
                                                     </div>
                                                 </div>
-                                              </div>
-
                                             </div>
                                           </div>
                                     </div>
 
-                                    <div class="col-lg-4 col-md-6 col-12">
+                                    <div class="col-lg-3 col-md-4 col-12">
                                         <div class="card">
-                                            <div class="card-body">
-                                              <div class="card-title">
-                                                  <img src="assests/img/user.png" />
-                                              </div>
-                                              
-                                              <div class="card-body">
-                                                    <div><span>إسم المستخدم</span></div>
-                                                    <div><span>عدد أفراد الاسرة:</span> <Span>7</Span></div>
-                                                    <div><span>النقاط الحالية:</span> <span>200</span></div>
-                                                    <div><span>النقاط المستخدمة:</span> <span>800</span></div>
-                                              </div>
+                                            <div class="card-title">
+                                                <img src="assests/img/slide-2.jpg" />
+                                            </div>
 
-                                              <div class="card-footer">
+                                            <div class="card-body">
+                                                <p>كورس تعليم الاطفال</p>
+                                                <i class="fas fa-seedling"></i><span>عدد النقط 15 نقطة</span> <br>
+                                                <span>شامل ضريبة القيمة</span>
+                                            </div>
+
+                                            <div class="card-footer">
                                                 <div class="row">
                                                     <div class="col-3">
                                                         <i class="fas fa-times-circle card-footer-icon"></i>
@@ -1229,27 +1199,23 @@
                                                         <i class="fas fa-eye card-footer-icon"></i>
                                                     </div>
                                                 </div>
-                                              </div>
-
                                             </div>
                                           </div>
                                     </div>
 
-                                    <div class="col-lg-4 col-md-6 col-12">
+                                    <div class="col-lg-3 col-md-4 col-12">
                                         <div class="card">
-                                            <div class="card-body">
-                                              <div class="card-title">
-                                                  <img src="assests/img/user.png" />
-                                              </div>
-                                              
-                                              <div class="card-body">
-                                                    <div><span>إسم المستخدم</span></div>
-                                                    <div><span>عدد أفراد الاسرة:</span> <Span>7</Span></div>
-                                                    <div><span>النقاط الحالية:</span> <span>200</span></div>
-                                                    <div><span>النقاط المستخدمة:</span> <span>800</span></div>
-                                              </div>
+                                            <div class="card-title">
+                                                <img src="assests/img/slide-3.jpg" />
+                                            </div>
 
-                                              <div class="card-footer">
+                                            <div class="card-body">
+                                                <p>كورس تعليم الاطفال</p>
+                                                <i class="fas fa-seedling"></i><span>عدد النقط 15 نقطة</span> <br>
+                                                <span>شامل ضريبة القيمة</span>
+                                            </div>
+
+                                            <div class="card-footer">
                                                 <div class="row">
                                                     <div class="col-3">
                                                         <i class="fas fa-times-circle card-footer-icon"></i>
@@ -1267,18 +1233,85 @@
                                                         <i class="fas fa-eye card-footer-icon"></i>
                                                     </div>
                                                 </div>
-                                              </div>
-
                                             </div>
                                           </div>
                                     </div>
-                                    
+
+                                    <div class="col-lg-3 col-md-4 col-12">
+                                        <div class="card">
+                                            <div class="card-title">
+                                                <img src="assests/img/user.png" />
+                                            </div>
+
+                                            <div class="card-body">
+                                                <p>كورس تعليم الاطفال</p>
+                                                <i class="fas fa-seedling"></i><span>عدد النقط 15 نقطة</span> <br>
+                                                <span>شامل ضريبة القيمة</span>
+                                            </div>
+
+                                            <div class="card-footer">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <i class="fas fa-times-circle card-footer-icon"></i>
+                                                    </div>
+
+                                                    <div class="col-3">
+                                                        <i class="fas fa-user-edit card-footer-icon"></i>
+                                                    </div>
+
+                                                    <div class="col-3">
+                                                        <i class="fas fa-plus-circle card-footer-icon"></i>
+                                                    </div>
+
+                                                    <div class="col-3">
+                                                        <i class="fas fa-eye card-footer-icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                          </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-4 col-12">
+                                        <div class="card">
+                                            <div class="card-title">
+                                                <img src="assests/img/user.png" />
+                                            </div>
+
+                                            <div class="card-body">
+                                                <p>كورس تعليم الاطفال</p>
+                                                <i class="fas fa-seedling"></i><span>عدد النقط 15 نقطة</span> <br>
+                                                <span>شامل ضريبة القيمة</span>
+                                            </div>
+
+                                            <div class="card-footer">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <i class="fas fa-times-circle card-footer-icon"></i>
+                                                    </div>
+
+                                                    <div class="col-3">
+                                                        <i class="fas fa-user-edit card-footer-icon"></i>
+                                                    </div>
+
+                                                    <div class="col-3">
+                                                        <i class="fas fa-plus-circle card-footer-icon"></i>
+                                                    </div>
+
+                                                    <div class="col-3">
+                                                        <i class="fas fa-eye card-footer-icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                          </div>
+                                    </div>
+
+                                   
                                 </div>
                             </div>
 
 
                         </div>
-                    </div> <!-- benfits-->
+                    </div> <!-- show services-->
 
 
                 </div><!-- content container-->

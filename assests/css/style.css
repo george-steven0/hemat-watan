@@ -1803,6 +1803,10 @@ table.dataTable thead .sorting_desc:after{
     color: #0D786C;
     cursor: pointer;
 }
+.inbox .inbox-filter ul li a{
+    color: #0D786C;
+    text-decoration: none;
+}
 
 .inbox .inbox-filter ul li input, .inbox .inbox-filter ul li i{
     margin-left: 10px;
@@ -2450,19 +2454,32 @@ table.dataTable thead .sorting_desc:after{
 .add-product .product-input .prod-title{
     font-size: 18px;
     color: #002b4d;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 .add-product .product-input{
     margin-top: 50px;
 }
 .add-product .quantity input[type="radio"]{
-    margin-right: 12px;
+    margin-right: 22px;
 }
 .add-product .quantity label{
     margin-right: 12px;
-    margin-top: 8px;
+    margin-top: 3px;
     color: #002b4d;
-    font-size: 19px;
+    font-size: 16px;
+}
+.add-product .product-input input{
+    border-radius: 25px !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius:0 !important ;
+    border:4px solid #eee !important
+}
+.add-product .product-input span{
+    border-top-right-radius: 25px !important;
+    border-bottom-right-radius: 25px !important;
+}
+.add-product .product-input .up-icon{
+    border-radius: 0 !important;
 }
 .add-product .custom-file-input:lang(en) ~ .custom-file-label::after{
   
@@ -2512,6 +2529,146 @@ table.dataTable thead .sorting_desc:after{
 }
 /* Company Profile */
 
+/* Malcoo profile */
+.malco-profile .malcoo-nav{
+    background-color: #002c30;
+}
+.malco-profile .side_nav_container .profile-name span{
+    color: #124092;
+    font-weight: bolder;
+    text-shadow: 0px 0px 6px #2c66ca;
+}
+.malco-profile .comp-inbox .inbox-filter ul li a,.malco-profile .comp-inbox .inbox-table table tr td a,.malco-profile .side_nav_container .link_cont a i{
+    color: #002c30;
+}
+.malco-profile .malcoo-order-table{
+    margin-top: 40px;
+    background-color: #d6d5d5;
+    height: 600px;
+    overflow-y: scroll;
+    padding: 8px;
+    border-radius: 10px;
+}
+.malco-profile .malcoo-order-table::-webkit-scrollbar{
+    opacity: 0;
+}
+.malco-profile .malcoo-order-table::-webkit-scrollbar-thumb{
+    opacity: 0;
+}
+.malco-profile .malcoo-order-table tr td{
+    border: none;
+}
+.malco-profile .malcoo-order-table table tr td img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+.malco-profile .malcoo-order-table .nav-tabs .nav-link.active{
+    background-color:#bebebe ;
+}
+.malco-profile .add-service span{
+    margin-bottom: 15px;
+}
+.malco-profile .save-btn button{
+    margin-left: 10%;
+    margin-top: 10%;
+    background-color:#002c30 ;
+}
+.malco-profile .add-company-title{
+    text-align: right;
+    font-size: 19px;
+    color: #002c30;
+    font-weight: bold;
+}
+/* Malcoo profile */
+
+
+
+/* Service Provider Profile */
+.serv-prov-profile .service-provider-nav,.serv-prov-profile .comp-board .order-table-title span,.serv-prov-profile .comp-board .order-table-status tr td button,.serv-prov-profile .add-product .save-btn button,.serv-prov-profile .show-prod .benf-cards .card .card-footer{
+    background-color: #41584b;
+}
+.serv-prov-profile .side_nav_container .link_cont a i,.serv-prov-profile .comp-inbox .inbox-filter ul li a,.serv-prov-profile .comp-inbox .inbox-table table tr td a, .serv-prov-profile .comp-inbox .inbox-table table tr td span,.serv-prov-profile .add-product .title,.serv-prov-profile .add-product .product-input .prod-title{
+    color: #41584b !important;
+}
+.serv-prov-profile .comp-board .order-table-status tr td button{
+    color: #fff;
+}
+.serv-prov-profile .prsonal-form .title{
+    font-size: 20px;
+    font-weight: 600;
+    color: #41584b;
+}
+.serv-prov-profile .prsonal-form .title i{
+    font-size: 23px;
+    margin-left: 10px;
+}
+.product-input .input-group{
+    margin-bottom: 20px;
+}
+.serv-prov-profile .quantity select{
+    border-radius: 25px;
+    appearance: none;
+}
+
+.product-input textarea{
+    border-radius: 25px;
+    padding: 20px;
+}
+.product-input .quantity{
+    align-items: center;
+}
+.serv-prov-profile .show-prod .title{
+    margin-bottom: 0px;
+    color: #41584b;
+}
+.serv-prov-profile .benfits-container .filter .filter-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: #41584b;
+    color: #fff;
+}
+.serv-prov-profile .benfits-container .filter .filter-container i{
+    margin-left: 5px;
+}
+.serv-prov-profile .service-fix{
+    align-items: center;
+}
+.serv-prov-profile .service-card .card{
+    text-align: right;
+}
+.serv-prov-profile .service-card .card .card-title img{
+    width: 100%;
+    height: 130px;
+    border-radius:0px ;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.serv-prov-profile .service-card .card .card-body{
+    padding: 5px 15px 5px 5px;
+}
+.serv-prov-profile .service-card .card .card-body > p{
+    font-weight: bolder;
+    font-size: 19px;
+    color: #41584b;
+}
+.serv-prov-profile .service-card .card .card-body > span{
+    font-size: 14px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    line-height: 2;
+    color: #6a6b6b;
+}
+.serv-prov-profile .service-card .card .card-body > i {
+    margin-left: 10px;
+}
+/* Service Provider Profile */
 
 
 

@@ -1196,32 +1196,139 @@
                                 </div>
 
                                 <div class="col-12 inbox-filter">
-                                    <ul class="list-unstyled">
+                                    <ul class="list-unstyled" id="myList" role="tablist">
                                         <li>
                                             <input type="checkbox" /><span>تحديد الكل</span>
                                         </li>
 
                                         <li>
-                                            <i class="far fa-credit-card"></i><span> كل الرسائل</span>
+                                            <a class="" data-toggle="list" href="#all-message" role="tab" aria-controls="home"><i class="far fa-credit-card"></i><span> كل الرسائل</span></a>
+                                            
                                         </li>
 
                                         <li>
-                                            <i class="fas fa-paper-plane"></i><span> المرسلة </span>
+                                            <a class="" data-toggle="list" href="#sent-message" role="tab" aria-controls="home"><i class="fas fa-paper-plane"></i><span> المرسلة </span></a>
+                                            
                                         </li>
 
                                         <li>
-                                            <i class="fas fa-clipboard"></i><span>  المستلمة</span>
+                                            <a class="" data-toggle="list" href="#recieve-message" role="tab" aria-controls="home"><i class="fas fa-clipboard"></i><span>  المستلمة</span></a>
+
                                         </li>
 
                                         <li>
-                                            <i class="far fa-heart"></i><span> المفضلة</span>
+                                            <a class="" data-toggle="list" href="#fav-message" role="tab" aria-controls="home"><i class="far fa-heart"></i><span> المفضلة</span></a>
+                                            
+
                                         </li>
 
                                     </ul>
                                 </div>
 
-                                <div class="col-12 inbox-table">
-                                    <div class="table-responsive">
+                                <div class="col-12 inbox-table tab-content">
+                                    <div class="table-responsive tab-pane fade show active" id="all-message" role="tabpanel">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox" />
+                                                        <img src="assests/img/user.png" />
+                                                        <a href="chat.html" target="_blank" class="name"> اروي السيد </a>
+                                                        <span class="time">10:30 am</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox" />
+                                                        <img src="assests/img/user.png" />
+                                                        <a href="chat.html" target="_blank" class="name"> اروي السيد </a>
+                                                        <span class="time">10:30 am</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox" />
+                                                        <img src="assests/img/user.png" />
+                                                        <a href="chat.html" target="_blank" class="name"> اروي السيد </a>
+                                                        <span class="time">10:30 am</span>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="table-responsive tab-pane fade" id="sent-message" role="tabpanel">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox" />
+                                                        <img src="assests/img/user.png" />
+                                                        <a href="chat.html" target="_blank" class="name"> منى السيد </a>
+                                                        <span class="time">10:30 am</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox" />
+                                                        <img src="assests/img/logo.png" />
+                                                        <a href="chat.html" target="_blank" class="name"> على السيد </a>
+                                                        <span class="time">10:30 am</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox" />
+                                                        <img src="assests/img/user.png" />
+                                                        <a href="chat.html" target="_blank" class="name"> اروي السيد </a>
+                                                        <span class="time">10:30 am</span>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="table-responsive tab-pane fade" id="recieve-message" role="tabpanel">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox" />
+                                                        <img src="assests/img/user.png" />
+                                                        <a href="chat.html" target="_blank" class="name"> منى السيد </a>
+                                                        <span class="time">10:30 am</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox" />
+                                                        <img src="assests/img/logo.png" />
+                                                        <a href="chat.html" target="_blank" class="name"> على السيد </a>
+                                                        <span class="time">10:30 am</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox" />
+                                                        <img src="assests/img/user.png" />
+                                                        <a href="chat.html" target="_blank" class="name"> اروي السيد </a>
+                                                        <span class="time">10:30 am</span>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="table-responsive tab-pane fade" id="fav-message" role="tabpanel">
                                         <table class="table">
                                             <tbody>
                                                 <tr>
