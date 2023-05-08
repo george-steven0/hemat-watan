@@ -104,7 +104,7 @@ body{
     text-align: center;
     
 }
-.top_content .top-content-holder .top-content-data .top-content-btn button{
+.top_content .top-content-holder .top-content-data .top-content-btn a{
     color: #fff;
     background-color: #15726c;
     margin: 15px;
@@ -164,6 +164,10 @@ body{
 .sub_content .sub_cont_holder .join_btn_holder .join_text{
     font-size: 17px;
     padding: 0px 5px;
+}
+.sub_content .sub_cont_holder .join_btn_holder .join_text a{
+    text-decoration: none;
+    color: #555;
 }
 /* sub content 1 */
 
